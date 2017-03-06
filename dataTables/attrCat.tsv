@@ -1,0 +1,114 @@
+attr	category
+calcMode	Animation value attributes
+values	Animation value attributes
+keyTimes	Animation value attributes
+keySplines	Animation value attributes
+from	Animation value attributes
+to	Animation value attributes
+by	Animation value attributes
+autoReverse	Animation value attributes
+accelerate	Animation value attributes
+decelerate	Animation value attributes
+additive	Animation addition attributes
+accumulate	Animation addition attributes
+requiredExtensions	Conditional processing attributes
+requiredFeatures	Conditional processing attributes
+systemLanguage	Conditional processing attributes
+id	Core attributes
+xml:base	Core attributes
+xml:lang	Core attributes
+xml:space	Core attributes
+onabort	Document event attributes
+onerror	Document event attributes
+onresize	Document event attributes
+onscroll	Document event attributes
+onunload	Document event attributes
+onzoom	Document event attributes
+height	Filter primitive attributes
+result	Filter primitive attributes
+width	Filter primitive attributes
+x	Filter primitive attributes
+y	Filter primitive attributes
+onactivate	Graphical event attributes
+onclick	Graphical event attributes
+onfocusin	Graphical event attributes
+onfocusout	Graphical event attributes
+onload	Graphical event attributes
+onmousedown	Graphical event attributes
+onmousemove	Graphical event attributes
+onmouseout	Graphical event attributes
+onmouseover	Graphical event attributes
+onmouseup	Graphical event attributes
+alignment-baseline	Presentation attributes
+baseline-shift	Presentation attributes
+clip	Presentation attributes
+clip-path	Presentation attributes
+clip-rule	Presentation attributes
+color	Presentation attributes
+color-interpolation	Presentation attributes
+color-interpolation-filters	Presentation attributes
+color-profile	Presentation attributes
+color-rendering	Presentation attributes
+cursor	Presentation attributes
+direction	Presentation attributes
+display	Presentation attributes
+dominant-baseline	Presentation attributes
+enable-background	Presentation attributes
+fill	Presentation attributes
+fill-opacity	Presentation attributes
+fill-rule	Presentation attributes
+filter	Presentation attributes
+flood-color	Presentation attributes
+flood-opacity	Presentation attributes
+font-family	Presentation attributes
+font-size	Presentation attributes
+font-size-adjust	Presentation attributes
+font-stretch	Presentation attributes
+font-style	Presentation attributes
+font-variant	Presentation attributes
+font-weight	Presentation attributes
+glyph-orientation-horizontal	Presentation attributes
+glyph-orientation-vertical	Presentation attributes
+image-rendering	Presentation attributes
+kerning	Presentation attributes
+letter-spacing	Presentation attributes
+lighting-color	Presentation attributes
+marker-end	Presentation attributes
+marker-mid	Presentation attributes
+marker-start	Presentation attributes
+mask	Presentation attributes
+opacity	Presentation attributes
+overflow	Presentation attributes
+pointer-events	Presentation attributes
+shape-rendering	Presentation attributes
+stop-color	Presentation attributes
+stop-opacity	Presentation attributes
+stroke	Presentation attributes
+stroke-dasharray	Presentation attributes
+stroke-dashoffset	Presentation attributes
+stroke-linecap	Presentation attributes
+stroke-linejoin	Presentation attributes
+stroke-miterlimit	Presentation attributes
+stroke-opacity	Presentation attributes
+stroke-width	Presentation attributes
+text-anchor	Presentation attributes
+text-decoration	Presentation attributes
+text-rendering	Presentation attributes
+unicode-bidi	Presentation attributes
+visibility	Presentation attributes
+word-spacing	Presentation attributes
+writing-mode	Presentation attributes
+type	Transfer function attributes
+tableValues	Transfer function attributes
+slope	Transfer function attributes
+intercept	Transfer function attributes
+amplitude	Transfer function attributes
+exponent	Transfer function attributes
+offset	Transfer function attributes
+xlink:href	XLink attributes
+xlink:type	XLink attributes
+xlink:role	XLink attributes
+xlink:arcrole	XLink attributes
+xlink:title	XLink attributes
+xlink:show	XLink attributes
+xlink:actuate	XLink attributes

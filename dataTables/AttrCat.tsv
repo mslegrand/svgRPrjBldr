@@ -1,0 +1,40 @@
+category	attribute
+animation event attribute	‘onbegin’
+animation event attribute	‘onend’
+animation event attribute	‘onload’
+animation event attribute	‘onrepeat’
+conditional processing attribute	‘requiredExtensions’
+conditional processing attribute	‘requiredFeatures’
+conditional processing attribute	‘systemLanguage’
+core attributes	‘id’
+core attributes	‘xml:base’
+core attributes	‘xml:lang’
+core attributes	‘xml:space’
+document event attribute	‘onabort’
+document event attribute	‘onerror’
+document event attribute	‘onresize’
+document event attribute	‘onscroll’
+document event attribute	‘onunload’
+document event attribute	‘onzoom’
+filter primitive attributes	‘height’
+filter primitive attributes	‘result’
+filter primitive attributes	‘width’
+filter primitive attributes	‘x’
+filter primitive attributes	‘y’
+graphical event attribute	‘onactivate’
+graphical event attribute	‘onclick’
+graphical event attribute	‘onfocusin’
+graphical event attribute	‘onfocusout’
+graphical event attribute	‘onload’
+graphical event attribute	‘onmousedown’
+graphical event attribute	‘onmousemove’
+graphical event attribute	‘onmouseout’
+graphical event attribute	‘onmouseover’
+graphical event attribute	‘onmouseup’
+viewport coordinate system	‘viewBox’
+XLink attributes	‘xlink:type’
+XLink attributes	‘xlink:role’
+XLink attributes	‘xlink:arcrole’
+XLink attributes	‘xlink:title’
+XLink attributes	‘xlink:show’
+XLink attributes	‘xlink:actuate’

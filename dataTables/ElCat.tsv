@@ -1,0 +1,99 @@
+category	element
+animation element	‘animateColor’
+animation element	‘animateMotion’
+animation element	‘animateTransform’
+animation element	‘animate’
+animation element	‘set’
+basic shape	‘circle’
+basic shape	‘ellipse’
+basic shape	‘line’
+basic shape	‘polygon’
+basic shape	‘polyline’
+basic shape	‘rect’
+clipping path	‘path’
+clipping path	‘text’
+container element	‘a’
+container element	‘defs’
+container element	‘glyph’
+container element	‘g’
+container element	‘marker’
+container element	‘mask’
+container element	‘missing-glyph’
+container element	‘pattern’
+container element	‘svg’
+container element	‘switch’
+container element	‘symbol’
+current innermost SVG document fragment	‘svg’
+current SVG document fragment	‘svg’
+current SVG document fragment	‘svg’
+descriptive element	‘desc’
+descriptive element	‘metadata’
+descriptive element	‘title’
+filter primitive element	‘filter’
+filter primitive element	‘feBlend’
+filter primitive element	‘feColorMatrix’
+filter primitive element	‘feComponentTransfer’
+filter primitive element	‘feComposite’
+filter primitive element	‘feConvolveMatrix’
+filter primitive element	‘feDiffuseLighting’
+filter primitive element	‘feDisplacementMap’
+filter primitive element	‘feFlood’
+filter primitive element	‘feGaussianBlur’
+filter primitive element	‘feImage’
+filter primitive element	‘feMerge’
+filter primitive element	‘feMorphology’
+filter primitive element	‘feOffset’
+filter primitive element	‘feSpecularLighting’
+filter primitive element	‘feTile’
+filter primitive element	‘feTurbulence’
+gradient element	‘linearGradient’
+gradient element	‘radialGradient’
+graphics element	‘circle’
+graphics element	‘ellipse’
+graphics element	‘image’
+graphics element	‘line’
+graphics element	‘path’
+graphics element	‘polygon’
+graphics element	‘polyline’
+graphics element	‘rect’
+graphics element	‘text’
+graphics element	‘use’
+graphics referencing element	‘image’
+graphics referencing element	‘use’
+IRI reference	‘defs’
+light source element	‘feDiffuseLighting’
+light source element	‘feSpecularLighting’
+light source element	‘feDistantLight’
+light source element	‘fePointLight’
+light source element	‘feSpotLight’
+local IRI reference	‘defs’
+non-local IRI reference	‘defs’
+outermost svg element	‘svg’
+shape	‘path’
+shape	‘rect’
+shape	‘circle’
+shape	‘ellipse’
+shape	‘line’
+shape	‘polyline’
+shape	‘polygon’
+structural element	‘defs’
+structural element	‘g’
+structural element	‘svg’
+structural element	‘symbol’
+structural element	‘use’
+SVG document fragment	‘svg’
+SVG document fragment	‘svg’
+SVG document fragment	‘svg’
+SVG document fragment	‘svg’
+SVG document fragment	‘svg’
+text content element	‘altGlyph’
+text content element	‘textPath’
+text content element	‘text’
+text content element	‘tref’
+text content element	‘tspan’
+text content child element	‘altGlyph’
+text content child element	‘textPath’
+text content child element	‘tref’
+text content child element	‘tspan’
+text content block element	‘tspan’
+viewport coordinate system	‘svg’
