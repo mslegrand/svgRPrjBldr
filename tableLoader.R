@@ -2,14 +2,22 @@
 library(data.table)
 
 tablesSrc=list(
-  AVEL.DT="dataTables/AVELTable.tsv",
-  AVD.DT="dataTables/AVDTable.tsv",
+  AVEL.DT="./dataTables/AVELTable.tsv",
+  AVD.DT="./dataTables/AVDTable.tsv",
   es.DT="./dataTables/elementSummary.tsv",
   eaCS.DT="./dataTables/elementAttrCategorySummary.tsv",
-  PA.DT="dataTables/presentationAttr.tsv",
-  COP.DT="dataTables/comboParams.tsv",
-  COP1.DT="dataTables/comboParams.tsv",
-  AET.DT="./dataTables/AETTable.tsv"
+  PA.DT="./dataTables/presentationAttr.tsv",
+  COP.DT="./dataTables/comboParams.tsv",
+  COP1.DT="./dataTables/comboParams.tsv",
+  AET.DT="./dataTables/AETTable.tsv",
+  PI.DT="./dataTables/propIndex.tsv",
+  PAD.DT="./dataTables/PADescription.csv",
+  RAD.DT="./dataTables/regAttrDescription.csv",
+  ED.DT="./dataTables/elementDescription.csv",
+  CEL.DT="./dataTables/catEleLookUp.csv",
+  SPA.DT="./dataTables/specParams.csv",
+  COAttrD.DT="./dataTables/COAttrD.csv",
+  EL2CAT.DT="./dataTables/catEleLookUp.csv"
 )
 
 #~ usage:  
@@ -28,7 +36,7 @@ requireTable<-function(...){
                  #stop(paste("Cannot find path for data.table='", name,"'\n"))
                } else{
                  path<-tablesSrc[[name]]
-                 cl<-substitute(fread(path )->>name, list(path=path, name=name))
+                 cl<-substitute(fread(path, showProgress=FALSE )->>name, list(path=path, name=name))
                  eval(cl, env=parent.frame() )        
                }
              }
