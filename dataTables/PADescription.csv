@@ -1,0 +1,62 @@
+attr,descript
+writing-mode ,Sets the initial inline-progression-direction
+glyph-orientation-vertical ,controls glyph orientation when the inline-progression-direction is vertical
+glyph-orientation-horizontal ,controls glyph orientation when the inline-progression-direction is horizontal
+direction ,specifies the base writing direction of text
+unicode-bidi ,Specifies  text in a single line to appear with mixed directionality
+text-anchor ," Specifies alignment (start-, middle- or end-alignment) a string of text relative to a given point"
+dominant-baseline ,Specifies baseline table established at the start of processing of a ‘text’ element
+alignment-baseline , Determines or re-determines a scaled-baseline-table
+baseline-shift ,Specifies which baseline of this element is to be aligned with the corresponding baseline of the parent
+font-family ,Specifies a prioritized list of which font family to be used to render text
+font-style ,"Specifies whether the text is to be rendered using a normal, italic or oblique face."
+font-variant ,Specifies  whether the text is to be rendered using the normal glyphs for lowercase characters or using small-caps glyphs for lowercase characters
+font-weight ,Specifies boldness or lightness of the glyphs used to render the text
+font-stretch ,Specifies  the desired amount of condensing or expansion in the glyphs used to render the text.
+font-size ,Specifies  size of the font from baseline to baseline when multiple lines of text are set solid in a multiline layout environment.
+font-size-adjust ,Specifies specify an aspect value for an element that will preserve the x-height of the first choice font in a substitute font.
+font ,"Shorthand property for setting ‘font-style’, ‘font-variant’, ‘font-weight’, ‘font-size’, ‘line-height’ and ‘font-family’. "
+kerning ,Specifies any  adjust inter-glyph spacing based on kerning tables that are included in the current font
+letter-spacing ,Specifies spacing behavior between text characters supplemental to any spacing due to the ‘kerning’ property.
+word-spacing ,Specifies spacing behavior between words.
+text-decoration ,Specifies decorations that are added to the text of an element.  (Such as blinking)
+overflow ,"Specifies behaviour element when it overflows its viewport (such as scroll, hidden, …)"
+clip ,"Specifies whether to clip by shape,  auto, or inherit from container."
+clip-path ,Specifies path for clipping.
+clip-rule ,Specifies whether to use an even-odd rule for clipping
+mask ,Specifies what to use for masking
+opacity ,Specifies opacity.
+fill ,Specifies the paints used to fill the interior of a given graphical element.
+fill-rule ,Specifies algorithm to use for determining what is consider  interior when filling.
+fill-opacity ,Specifies the opacity of the painting operation used to paint the interior the current object.
+stroke ,Specifies the paint used for the outline of the given graphical element
+stroke-width ,Specifies the width of the stroke on the current object.
+stroke-linecap ,Specifies the shape to be used at the end of open subpaths when they are stroked.
+Stroke-linejoin,Specifies the shape to be used at the corners of paths or basic shapes when they are stroked.
+stroke-miterlimit ,Specifies a limit on the ratio of the miter length to the ‘stroke-width.
+stroke-dasharray ,Specifies the pattern of dashes and gaps used to stroke paths.
+stroke-dashoffset ,Specifies the distance into the dash pattern to start the dash.
+stroke-opacity ,Specifies the opacity of the painting operation used to stroke the current object.
+display ,Specifies whether an element or container will be rendered.
+visibility ,Specifies whether the  current graphics element will be visible.
+marker-start ,Defines the arrowhead or polymarker that shall be drawn at the first vertex of the given ‘path’ element or basic shape.
+marker-mid ,Defines the arrowhead or polymarker that shall be drawn at the final vertex of the given ‘path’ element or basic shape. 
+marker-end ,Defines the arrowhead or polymarker that shall be drawn at every vertex other that the first and final vertices for the given ‘path’ element or basic shape. 
+marker ,Specifies the marker symbol that shall be used for all points on the sets the value for all vertices on the given ‘path’ element or basic shape.
+color-interpolation ,"Specifies the color space for gradient interpolations, color animations and alpha compositing."
+color-interpolation-filters ,Specifies the color space for imaging operations performed via filter effects.
+color-rendering ,"Specifies the color space for gradient interpolations, color animations and alpha compositing."
+shape-rendering ,Specifies which tradeoff to use (auto | optimizeSpeed | crispEdges ) when rendering paths and basic shapes.
+text-rendering ,Specifies which tradeoff to use (auto | optimizeSpeed | optimizeLegibility ) when rendering text.
+image-rendering ,Specifies which tradeoff to use (auto | optimizeSpeed | optimizeQuality) when rendering images.
+color ,"Specifies a potential indirect value (currentColor) for the ‘fill’, ‘stroke’, ‘stop-color’, ‘flood-color’ and ‘lighting-color’ properties."
+color-profile ,Specifies a source color profile
+pointer-events ,Specifies under what circumstances a given graphics element can be the target element for a pointer event
+cursor ,Specifies the type of cursor to be displayed for the pointing device.
+filter ,Used to specify a reference to  the filter effects to be applied to the given container or graphical element.
+enable-background ,Specifies how to manage the accumulation of background images of container elements.
+lighting-color ,Specifies the color of the light source for filter primitives feDiffuseLighting and feSpecularLighting.
+flood-color ,Specifies what color to use to flood the current filter primitive subregion.
+flood-opacity ,Specifies the opacity value to be used across the entire filter primitive subregion.
+stop-color ,Specifies the color to achieve at the gradient stop position.
+stop-opacity ,Specifies the opacity  to achieve at the gradient stop position.

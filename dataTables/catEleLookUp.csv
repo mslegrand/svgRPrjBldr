@@ -1,0 +1,81 @@
+category,element
+Uncategorized Elements,view
+Uncategorized Elements,altGlyphDef
+Uncategorized Elements,altGlyphItem
+Uncategorized Elements,glyphRef
+Uncategorized Elements,mpath
+Uncategorized Elements,clipPath
+Uncategorized Elements,color-profile
+Uncategorized Elements,cursor
+Uncategorized Elements,filter
+Uncategorized Elements,feFuncR
+Uncategorized Elements,feFuncG
+Uncategorized Elements,feFuncB
+Uncategorized Elements,feFuncA
+Uncategorized Elements,feMergeNode
+Uncategorized Elements,font
+Uncategorized Elements,hkern
+Uncategorized Elements,vkern
+Uncategorized Elements,font-face
+Uncategorized Elements,font-face-src
+Uncategorized Elements,font-face-uri
+Uncategorized Elements,font-face-format
+Uncategorized Elements,font-face-name
+Uncategorized Elements,foreignObject
+Uncategorized Elements,stop
+Uncategorized Elements,script
+Uncategorized Elements,style
+Text Content Elements,text
+Text Content Elements,tspan
+Text Content Elements,tref
+Text Content Elements,textPath
+Text Content Elements,altGlyph
+Animation Elements,animate
+Animation Elements,set
+Animation Elements,animateMotion
+Animation Elements,animateColor
+Animation Elements,animateTransform
+Shape Elements,rect
+Shape Elements,circle
+Shape Elements,ellipse
+Shape Elements,line
+Shape Elements,polyline
+Shape Elements,polygon
+Shape Elements,path
+Descriptive Elements,desc
+Descriptive Elements,title
+Descriptive Elements,metadata
+Graphics Referencing Elements,use
+Graphics Referencing Elements,image
+Light Source Elements,feDistantLight
+Light Source Elements,fePointLight
+Light Source Elements,feSpotLight
+Filter Primitive Elements,feBlend
+Filter Primitive Elements,feColorMatrix
+Filter Primitive Elements,feComponentTransfer
+Filter Primitive Elements,feComposite
+Filter Primitive Elements,feConvolveMatrix
+Filter Primitive Elements,feDiffuseLighting
+Filter Primitive Elements,feDisplacementMap
+Filter Primitive Elements,feFlood
+Filter Primitive Elements,feGaussianBlur
+Filter Primitive Elements,feImage
+Filter Primitive Elements,feMerge
+Filter Primitive Elements,feMorphology
+Filter Primitive Elements,feOffset
+Filter Primitive Elements,feSpecularLighting
+Filter Primitive Elements,feTile
+Filter Primitive Elements,feTurbulence
+Gradient Elements,linearGradient
+Gradient Elements,radialGradient
+Structural Container Elements,svg
+Structural Container Elements,g
+Structural Container Elements,defs
+Structural Container Elements,symbol
+Non-structural Container Elements,a
+Non-structural Container Elements,mask
+Non-structural Container Elements,switch
+Non-structural Container Elements,glyph
+Non-structural Container Elements,missing-glyph
+Non-structural Container Elements,pattern
+Non-structural Container Elements,marker

@@ -1,10 +1,13 @@
-
-#utils:::.addFunctionInfo(svg=c("cat","dog"))
+#---Stablize Root Directory -----------
+# if necessary, set working director to base of project
+getwd()->tmp
+gsub("/svgRPrjBldr/.*","/svgRPrjBldr",tmp)->tmp #I assume svgRPrjBldr occurs exactly once in path
+setwd(tmp)
+#---------------------------
 
 library(data.table)
-#library(XML)
-if(!exists("requireTable")){ source("tableLoader.R") }
-source("specialTagHandlers.R")
+if(!exists("requireTable")){ source("../tableLoader.R") }
+source("./code/specialTagHandlers.R")
 
 #notess to self
 #todo:
