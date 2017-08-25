@@ -1,24 +1,50 @@
 
 library(data.table)
 
+
 tablesSrc=list(
-  AVEL.DT="./dataTables/AVELTable.tsv",
-  AVD.DT="./dataTables/AVDTable.tsv",
-  es.DT="./dataTables/elementSummary.tsv",
+  ANIM.DT="./dataTables/ANIM.csv",
+  AVEL.DT="./dataTables/AVELTable5.csv",
+  AVD.DT="./dataTables/AVD60.csv", #"./dataTables/AVD41Table.csv", #AVD.DT="./dataTables/AVDTable.tsv",
+  es.DT="./dataTables/ES.csv",
   eaCS.DT="./dataTables/elementAttrCategorySummary.tsv",
-  PA.DT="./dataTables/presentationAttr.tsv",
-  COP.DT="./dataTables/comboParams.tsv",
-  COP1.DT="./dataTables/comboParams.tsv",
+  PA.DT="./dataTables/PA.csv", #"./dataTables/presentationAttr.tsv",
+  COP.DT="./dataTables/COP.csv",
+  COP1.DT="./dataTables/COP1.csv",
   AET.DT="./dataTables/AETTable.tsv",
-  PI.DT="./dataTables/propIndex.tsv",
-  PAD.DT="./dataTables/PADescription.csv",
-  RAD.DT="./dataTables/regAttrDescription.csv",
-  ED.DT="./dataTables/elementDescription.csv",
+  PI.DT="./dataTables/propIndex.tsv", #only here
+  PAD.DT="./dataTables/PADescription3.csv",
+  RAD.DT="./dataTables/regAttrDescription.csv", # only here
+  ED.DT="./dataTables/ED4.csv", #"./dataTables/elementDescription.csv",
   CEL.DT="./dataTables/catEleLookUp.csv",
-  SPA.DT="./dataTables/specParams.csv",
-  COAttrD.DT="./dataTables/COAttrD.csv",
-  EL2CAT.DT="./dataTables/catEleLookUp.csv"
+  SPA.DT="./dataTables/specParams.csv", # only here (or makeAdjunctiveTable)
+  SPACXY.DT="./dataTables/specParamsCXY.tsv", #only here
+  COAttrD.DT="./dataTables/COAttrD.csv", # appears to not be used
+  EL2CAT.DT="./dataTables/catEleLookUp.csv",
+  ADJ.DT="./dataTables/adjCO.csv", #only here!
+  PAV.DT="./dataTables/PAV_EDITED12.csv", 
+  RAF.DT="./dataTables/RAF18.csv",
+  PROLOG.DT="./dataTables/PROLOG6.csv",
+  EPILOG.DT="./dataTables/epilog5.csv",
+  ANC.DT="./dataTables/Ancillary10.csv"
 )
+
+#temporary kludge for keeping epilog current
+updateEpilog<-function(){
+  n1<-dir("./epilog/")
+  lookupKey<-gsub(".R$","",n1)
+  #requireTable(EPILOG.DT)
+  #EPILOG.DT[,lookupKey]->n2
+  files<-paste0("./epilog/",n1)
+  aList<-sapply(files, function(x){
+    #cat(x,"\n")
+    paste0(readLines(x),collapse="")
+  } )
+  epilog.DT<-data.table(lookupKey=lookupKey, value=aList)
+  fwrite(x = epilog.DT, file = tablesSrc[["EPILOG.DT"]], sep="\t")
+}
+
+updateEpilog()
 
 #~ usage:  
 #~ requireTable(AVD.DT, eaCS.DT)
