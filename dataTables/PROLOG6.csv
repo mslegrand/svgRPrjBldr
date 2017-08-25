@@ -1,0 +1,18 @@
+lookupKey	value
+either	The value can be either of the one of the following:
+value	The value is defined as follows:
+oneOf	The value can be any one of the following:
+preserveAspectRatio	The  value is a vector, which consists of mandatory alignment directive, possibly prepended with an optional defer directive and possibly postpended with an optional meet-or-slice directive.
+pathData	The value is a path-data description and is expressed in either one of the following ways.
+transform	The value is named list of coordinate transforms to be applied in the order in which they appear. The list names and  corresponding values (all numeric)
+oneOrMore	The value is a vector composed of one or more of the following:
+coordinate	The value represents a coordinate.
+coordinatesVector	The value is a vector representing one or more coordinates as defined below:
+length	The value represents a length.
+lengthVector	The value  represents one or more lengths, given as a vector. 
+numeric	The value is a numeric.
+Named-list 	The value is a named list.
+Unnamed-list	The value is an unnamed list.
+script	The value is a script, likely ecmascript (i.e.  javascript).
+angle	The value is a numeric representing an angle in degrees. 
+vec12	The value is a numeric vector having length 1 or 2.

@@ -1,0 +1,292 @@
+attr	val	type	val.def	prefix	sufix	revisit
+alignment-baseline	after-edge	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's *alignment* baseline.			
+alignment-baseline	alphabetic	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's  *alphabetic*  baseline.			
+alignment-baseline	auto	LITERAL	Specifies to set the alignment point to be the dominant-baseline of the parent.			
+alignment-baseline	baseline	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's  *dominant*  baseline			
+alignment-baseline	before-edge	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's  *before-edge* baseline			
+alignment-baseline	central	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's  *central* baseline			
+alignment-baseline	hanging	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's  *hanging* baseline			
+alignment-baseline	ideographic	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's *ideographic*  baseline			
+alignment-baseline	inherit	LITERAL	Specifies to inherit *alignment-baseline* value from the parent text content element..			
+alignment-baseline	mathematical	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's  *mathematical*  baseline			
+alignment-baseline	middle	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's *middle* baseline			
+alignment-baseline	text-after-edge	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's *text-after-edge* baseline			
+alignment-baseline	text-before-edge	LITERAL	Specifies to set the alignment point to be aligned with the parent text content element 's *text-before-edge* baseline			
+baseline-shift	<length>	NUMERIC	Specifies to shift the baseline by the given amount of length.			
+baseline-shift	<percentage>	CHARACTER	Specifies to shift the baseline by the amount given as  percentage of the line-height of text.			
+baseline-shift	baseline	LITERAL	Specifies a zero baseline shift, than is no shifting of the baseline.			
+baseline-shift	inherit	LITERAL	Specifies to Inherit the *baseline-shift* from the parent of this element..			
+baseline-shift	sub	LITERAL	Specifies to shift the baseline to the subscript position			
+baseline-shift	super	LITERAL	Specifies to shift the baseline to the superscript position			
+clip	<shape>	CHARACTER	Specifies the rectangle to clip to.			
+clip	auto	LITERAL	Specifies to clip  this element by the boundry of its viewport.			
+clip	inherit	LITERAL	Specifies that the clipping region for this element should be inherited from its parent,			
+clip-path	<clipPath-Element>	ELEMENT	Specifies a \strong{clipPath} element to be used for clipping			
+clip-path	<funciri>	CHARACTER	Specifies a reference to the \strong{clipPath} to be used for clipping by using the functional IRI notation.			
+clip-path	inherit	LITERAL	Specifies that the clip-path to be applied to  this element should  be inherited from this elements parents.			
+clip-path	none	LITERAL	Specifies no clipping to occur.			
+clip-rule	evenodd	LITERAL	Specifies the use of the even-odd rule to determine the interior.			
+clip-rule	inherit	LITERAL	Specifies to use the same rule as the parent for the determination of the interior.]			
+clip-rule	nonzero	LITERAL	Specifies to use the *non-zero rule* to determine the interior.			
+color	<color>	CHARACTER	Sets the color. The color may be expressed in one of three ways: name (i.e. red),  or  numeric (#f00 or #ff0000) or  rgb (rgb(255,0,0)). An optional ICC color may also be specified as a 2nd component of the color vector.			
+color	inherit	LITERAL	Specifies the color is to be inherited from the ancestor..			
+color-interpolation	auto	LITERAL	Specifies an auto selection of the color interpolation.			
+color-interpolation	inherit	LITERAL	Specifies to inherit the method of color interpolation from the parents.			
+color-interpolation	linearRGB	LITERAL	Specifies to use a  linearized RGB color space for color interpolation			
+color-interpolation	sRGB	LITERAL	Specifies to use sRGB color space for color interpolation			
+color-interpolation-filters	auto	LITERAL	Specifies to auto select the color-interpolation filter			
+color-interpolation-filters	inherit	LITERAL	Specifies to inherit the color-interpolation methodology from the parent.			
+color-interpolation-filters	linearRGB	LITERAL	Specifies to use the linearized RGB color space for the filter effects color operations .			
+color-interpolation-filters	sRGB	LITERAL	Specifies to use the sRGB color space for the filter effects color operations .			
+color-profile	<iri>	IRI	Specifies an IRI reference to the color profile to be used			
+color-profile	<name>	CHARACTER	Specifies the color profile by name			
+color-profile	auto	LITERAL	Specifies to auto select the color profile			
+color-profile	inherit	LITERAL	Specifies to inherit the color profiel from the parents color profile.			
+color-profile	sRGB	LITERAL	Specifies to use the sRGB  color profile			
+color-rendering	auto	LITERAL	Specifies to employ a trade-off strategy of optimization of color-rending  which balances speed vs quality.			
+color-rendering	inherit	LITERAL	Specifies to inherit the color-rendering optimzation from the parent.			
+color-rendering	optimizeQuality	LITERAL	Specifies to optimize the color-rendiering  for quality.			
+color-rendering	optimizeSpeed	LITERAL	Specifies to optimize the color-rendiering  for speed			
+cursor	<funciri>	FUNCIRI	Specifies a reference to the image for \strong{cursor} by using  functional IRI notation.			
+cursor	auto	LITERAL	Specifies to automatically select cursor based on current context.			
+cursor	crosshair	LITERAL	Specifies that cursor is to  be a *crosshair* cursor.			
+cursor	default	LITERAL	Specifies that cursor is to  be the *default* cursor.   This will most likely appear to be an arrow.			
+cursor	e-resize	LITERAL	Specifies that the right edge of the cursor is to move.			
+cursor	help ] ]	LITERAL	Specifies that the cursor is to be a help cursor ( question mark or balloon)			
+cursor	inherit	LITERAL	Specifies that the cursor is inherited from parent.			
+cursor	move	LITERAL	Specifies a move (drag) of the cursor.			
+cursor	n-resize	LITERAL	Specifies that the top edge of the cursor is to move.			
+cursor	ne-resize	LITERAL	Specifies that the top-right corner of the cursor is to move.			
+cursor	nw-resize	LITERAL	Specifies that the top-left corner of the cursor is to move.			
+cursor	pointer	LITERAL	Specifies that the cursor is a linking cursor. (often a small hand)			
+cursor	s-resize	LITERAL	Specifies that the bottom edge of the cursor is to move.			
+cursor	se-resize	LITERAL	Specifies that the bottom-right corner of the cursor is to move.			
+cursor	sw-resize	LITERAL	Specifies that the bottom-left corner of the cursor is to move.			
+cursor	text	LITERAL	Specifies that the cursor is a text select cursor (usually an I beam)			
+cursor	w-resize	LITERAL	Specifies that the left edge of the cursor is to move.			
+cursor	wait	LITERAL	Specifies that the cursor is a wait cursor ( often a watch or hour-class)			
+direction	inherit	LITERAL	Specifies to inherit tne direction from an ancestor.			
+direction	ltr	LITERAL	Specifies a left to right direction.			
+direction	rtl	LITERAL	Specifies a right to left direction.			
+display	block	LITERAL	Specifies a block display.			
+display	compact	LITERAL	Specifies a compack display.			
+display	inherit	LITERAL	Specifies to inherit the display from the parent.			
+display	inline	LITERAL	Specifies  the display to be *inline*.			
+display	inline-table	LITERAL	Specifies  the display to be *inline-table*.			
+display	list-item	LITERAL	Specifies  the display to be *list-item*.			
+display	marker	LITERAL	Specifies  the display to be *marker*.			
+display	none	LITERAL	Specifies not to render this element or its children.			
+display	run-in	LITERAL	Specifies  the display to be *run-in*.			
+display	table	LITERAL	Specifies  the display to be *table*.			
+display	table-caption	LITERAL	Specifies  the display to be *table-caption*.			
+display	table-cell	LITERAL	Specifies  the display to be *table-cell*.			
+display	table-column	LITERAL	Specifies  the display to be *table-column*.			
+display	table-column-group	LITERAL	Specifies  the display to be *table-column-group*.			
+display	table-footer-group	LITERAL	Specifies  the display to be *table-footer-group*.			
+display	table-header-group	LITERAL	Specifies  the display to be *table-header-group*.			
+display	table-row	LITERAL	Specifies  the display to be *table-row*.			
+display	table-row-group	LITERAL	Specifies  the display to be *table-row-group*.			
+dominant-baseline	alphabetic	LITERAL	Specifies to use an *alphabetic* baseline.			
+dominant-baseline	auto	LITERAL	Specifies to pick a baseline depending on element, writing mode, font-size, base-line shift.	baseline		
+dominant-baseline	central	LITERAL	Specifies to use a baseline halfway between the two baselines:  *text-before-edge* and *text-after-edge*.			
+dominant-baseline	hanging	LITERAL	Specifies to use the  *hanging*  baseline-table of the nominal font			
+dominant-baseline	ideographic	LITERAL	Specifies to use an  *ideographic* baseline-table of the nominal font			
+dominant-baseline	inherit	LITERAL	Specifies to inherit the balseline from an ancestor.			
+dominant-baseline	mathematical	LITERAL	Specifies to use  the *mathematical*  baseline-table of the nominal font			
+dominant-baseline	middle	LITERAL	Specifies to use a baseline which is offset from alphabetic baseline by 1/2  x-height of this  font.			
+dominant-baseline	no-change	LITERAL	Specifies to use the baseline of the parent.			
+dominant-baseline	reset-size	LITERAL	Specifies to rescale baselines for current font-size.			
+dominant-baseline	text-after-edge	LITERAL	Specifies to position the baseline around top of the acenders.			
+dominant-baseline	text-before-edge	LITERAL	Specifies to position the baseline around the bottom of the  descenders.			
+dominant-baseline	use-script	LITERAL	Specifies to compute the baseline using the predominant script of the character data content.			
+enable-background	accumulate	LITERAL	Directive to render to a 'background image canvas' if one exists ( previously created by an ancestor invoking enable-background=new ).  This is in addition to the rendering to the target device.			
+enable-background	inherit	LITERAL	Specifies the to inherit the background enable status from the parent.			
+enable-background	new [ <x> <y> <width> <height> ]	LITERAL	Specifies the creation of  a new  'background image canvas'  to overlay any existing one ( exists by way of an ancestor) and render to that. This is in addition to the rendering to the target device.			
+fill	none	LITERAL	Specifies not to paint the interior of the element.			
+fill	currentColor	LITERAL	Specifies to use the *currentColor* to paint the interior. The current color is the value of the color specified by the *color* property. 			
+fill	<color>	CHARACTER	Specifies a paint color to fill either a shape element or at text content element. The color may be given in any one of 3 ways: name (i.e. red), numeric (#f00 or #ff0000) or as ab rgb (rgb(255,0,0)).			
+fill	inherit	LITERAL	Specifies to use the fill from the parent element.			
+fill	<funciri>	FUNCIRI	Specifies to fill using this reference to a paint server, a paint server being a *pattern* or a *gradient*, or a custom paint extension			
+fill	<linearGradient>	ELEMENT	Specifies to fill using this **linearGradient** element			
+fill	<pattern>	ELEMENT	Specifies to fill using this **pattern** element			
+fill	<radialGradient>	ELEMENT	Specifies to fill using this **radialGradient** element			
+fill	currentColor	LITERAL	Specifies to use the *currentColor* to paint the interior. The current color is the value of the color specified by the *color* property. 			
+fill-opacity	<opacity-value>	NUMERIC	Specifies the opacity value, a  number between 0 and 1 indicating the opacity to be used as fill , with 1 being opaque and 0 being transparent.			
+fill-opacity	inherit	LITERAL	Specifies to inherit the opacity value from the parent.			
+fill-rule	evenodd	LITERAL	Specifies to use even-odd rule to determine the what is inside			
+fill-rule	inherit	LITERAL	Specifies to use the same *fill-rule* as the parent.			
+fill-rule	nonzero	LITERAL	Specifies to use the  non-zero rule to determine the what is the interior.			
+filter	<filter>	ELEMENT	Specifies  a **filter** element as the value of the  *filter* attribute. 			
+filter	<funciri>	FUNCIRI	Specifies  a  reference to a **filter** element given by functional IRI.			
+filter	inherit	LITERAL	Specifies to inherit the filter from parent.			
+filter	none	LITERAL	Specifies that there is no  filter to be applied.			
+flood-color	<color>	CHARACTER	Sets the flood color. The color may be expressed in one of three ways: name (i.e. red),  or  numeric (#f00 or #ff0000) or  rgb (rgb(255,0,0)). An optional ICC color may also be specified as a 2nd component of the color vector.			
+flood-color	c(<color>, <icccolor>)	CHARACTER	Specifies a vector with  color name followed by an ICC color.			
+flood-color	currentColor	LITERAL	Specifies to use the *currentColor* as the flood color. The current color is the value of the color specified by the *color* property. 			
+flood-color	inherit	LITERAL	Specifies to inherit the flood color from the parent.			
+flood-opacity	<opacity-value>	NUMERIC	Specifies the opacity value, a  number between 0 and 1 indicating the opacity to be used as fill , with 1 being opaque and 0 being transparent.			
+flood-opacity	inherit	LITERAL	Specifies to inherit the opacity value from the parent.			
+font-family	<family-name | generica-family>+		Specifies a vector of consisting of  font-family names or a generic-font-family names.			
+font-family	inherit	LITERAL	Specifies to inherit the font family from the parent.			
+font-size	<length>	NUMERIC	Specify font size. If no units are provided, the value is interpreted as a height in the current user coordinate system.			
+font-size	<percentage>	CHARACTER	Specifies the  font size as a percentage of parent font-size			
+font-size	inherit	LITERAL	Specifies to inherit font-size from parent element.			
+font-size	large	LITERAL	Specifies to set the font size to be *large*.			
+font-size	larger	LITERAL	Specifies to set  font-size to be larger than parent font-size			
+font-size	medium	LITERAL	Specifies to set font size to be *normal*.			
+font-size	small	LITERAL	Specifies to set the font size to be *'small'*.			
+font-size	smaller	LITERAL	Specify the font-size to be smaller  than parent font-size			
+font-size	x-large	LITERAL	Specifies to set the font size to be *'x-large'*.			
+font-size	x-small	LITERAL	Specifies to set the font size to be *'x-small'*.			
+font-size	xx-large	LITERAL	Specifies to set the font size to be *'xx-large'*.			
+font-size	xx-small	LITERAL	Specifies to set the font size to be  *'xx-small'*.			
+font-size-adjust	<number>	NUMERIC	Specifies the aspect ratio value(font-size divide by x-height) to preserve the x-height for the first font candidate substitution.			
+font-size-adjust	inherit	LITERAL	Specifies the to inherit the aspect ratio value from the parent. 			
+font-size-adjust	none	LITERAL	Specifies to make no aspect ratio adjustment.			
+font-stretch	condensed	LITERAL	Specifies the font stretch rank=3			
+font-stretch	expanded	LITERAL	Specifies the font stretch rank=7			
+font-stretch	extra-condensed	LITERAL	Specifies the font stretch rank=2			
+font-stretch	extra-expanded	LITERAL	Specifies the font stretch rank=8			
+font-stretch	inherit	LITERAL	Specifies the font  to inhert font-stretch from parent			
+font-stretch	narrower	LITERAL	Specifies the font stretch rank=-1+stretch rank of parent			
+font-stretch	normal	LITERAL	Specifies the font stretch rank=5 (default)			
+font-stretch	semi-condensed	LITERAL	Specifies the font stretch rank=4			
+font-stretch	semi-expanded	LITERAL	Specifies the font stretch rank=6			
+font-stretch	ultra-condensed	LITERAL	Specifies the font stretch rank=1			
+font-stretch	ultra-expanded	LITERAL	Specifies the font stretch rank=9			
+font-stretch	wider	LITERAL	Specifies the font stretch rank=1+stretch rank of parent			
+font-style	inherit	LITERAL	Specifies to Inherit the font style from the parent.			
+font-style	italic	LITERAL	Specifies to use an italicl style			
+font-style	normal	LITERAL	Specifies to use a normal style			
+font-style	oblique	LITERAL	Specifies to use an oblique style			
+font-variant	inherit	LITERAL	Inherit font-variant from the parent.			
+font-variant	normal	LITERAL	Specifies to use a normal variant style.			
+font-variant	small-caps	LITERAL	Specifies to use a small-caps  variant style.			
+font-weight	100	LITERAL	Sets the font-weight to be 100.			
+font-weight	200	LITERAL	Sets the font-weight to be 200.			
+font-weight	300	LITERAL	Sets the font-weight to be 300.			
+font-weight	400	LITERAL	Sets the font-weight to be 400.			
+font-weight	500	LITERAL	Sets the font-weight to be 500.			
+font-weight	600	LITERAL	Sets the font-weight to be 600.			
+font-weight	700	LITERAL	Sets the font-weight to be 700.			
+font-weight	800	LITERAL	Sets the font-weight to be 800.			
+font-weight	900	LITERAL	Sets the font-weight to be 900.			
+font-weight	bold	LITERAL	Sets the font-weight to be 700.			
+font-weight	bolder	LITERAL	Sets  the font-weight to be darker than inherited font-weight			
+font-weight	inherit	LITERAL	Specifies to use the  font-weight of parent.			
+font-weight	lighter	LITERAL	Sets the font-weight to be lighter than inherited font-weight			
+font-weight	normal	LITERAL	Sets the font-weight to be 400			
+glyph-orientation-horizontal	<angle>		Sets the angle of orientation (restricted to 0, 90, 180, and 270 degrees).			
+glyph-orientation-horizontal	inherit	LITERAL	Specifies to inherit the glyph orientation  from the  parent.			
+glyph-orientation-vertical	<angle>		Sets the angle of orientation (restricted to 0, 90, 180, and 270 degrees).			
+glyph-orientation-vertical	auto	LITERAL	Specifies to set orientation to 0 degrees if full-width full width,  else 90 degrees.			
+glyph-orientation-vertical	inherit	LITERAL	Specifies to inherit the glyph orientation  from the parent.			
+image-rendering	auto	LITERAL	Specifies to employ a trade-off strategy of image-rendering optimization which balances speed vs quality.			
+image-rendering	inherit	LITERAL	Specifies to inherit the image-rendering optimzation from the parent.			
+image-rendering	optimizeQuality	LITERAL	Specifies to optimize the image-rendiering  for quality.			
+image-rendering	optimizeSpeed	LITERAL	Specifies to optimize the image-rendiering  for speed			
+kerning	<length>	NUMERIC	Sets a value for the length for the inter-character spacing. Setting to 0, essentially diables auto kerning.			
+kerning	auto	LITERAL	Specifies to auto adjust adjust inter-glyph spacing by using kerning tables includess with the font.			
+kerning	inherit	LITERAL	Specifies to inherit the inter-character spacing adjustment from the parent.			
+letter-spacing	<length>	NUMERIC	Sets a value for the amount of supplemental (to kerning) spacing between text characters.			
+letter-spacing	inherit	LITERAL	Specifies to inherit  the value of letter-spacing adjustment from the parent.			
+letter-spacing	normal	LITERAL	Specifies no supplemental (to kerning) spacing between text characters.			
+lighting-color	<color> [<icccolor>]	CHARACTER	Sets the color of the lighting. The color may be given in any one of 3 ways: name (i.e. red), numeric (#f00 or #ff0000) or as ab rgb (rgb(255,0,0)).			
+lighting-color	currentColor	LITERAL	Specifes to use the *currentColor* for the light color. The current color is the value of the color specified by the *color* property. 			
+lighting-color	inherit	LITERAL	Specifies inheriting the lighting color from the parent.			
+mask	<funciri>	FUNCIRI	Sets a functional IRI reference to a mask element to be used for masking.			
+mask	<mask>	ELEMENT	Sets the given mask element as the element to be used for masking.			
+mask	inherit	LITERAL	Specifies to Inherit the maks from the parent.			
+mask	none	LITERAL	Specifies not to mask.			
+opacity	<opacity-value>	NUMERIC	Specifies the opacity value, a  number between 0 and 1 indicating the opacity to be used as fill , with 1 being opaque and 0 being transparent.			
+opacity	inherit	LITERAL	Specifies to inherit the opacity value from the parent.			
+overflow	auto	LITERAL	Signals to the user agent to  provide scrolling for overflowing boxes			
+overflow	hidden	LITERAL	Specifies to clip or hide overflow (default for inner svgs, pattern and markers)			
+overflow	inherit	LITERAL	Specifies to inherit the overflow property from the parent.			
+overflow	scroll	LITERAL	Specifies to clip over flow but to provide scrollbar for scrolling.			
+overflow	visible	LITERAL	Specifies to show overflow (default for outer most svg, i.e. svgR)			
+pointer-events	all	LITERAL	Specifies that this element can be targeted for a pointer event provided  pointer is over either the interior or border of this element.			
+pointer-events	fill	LITERAL	Specifies that this element can be targeted for a pointer event provided the pointer is over the interior of this element.			
+pointer-events	inherit	LITERAL	Specifies to inherit the *pointer-events* property from the parent.			
+pointer-events	none	LITERAL	Specifies that this element cannot be targeted  for a pointer event			
+pointer-events	painted	LITERAL	Specifies that this element can be targeted for a pointer event provided the  pointer is over a painted area. (Area being either interior or border).			
+pointer-events	stroke	LITERAL	Specifies that this element can be targeted for a pointer event provided and pointer is over the border.			
+pointer-events	visible	LITERAL	Specifies that element can be targeted for a pointer event provided visibilty='visible' and pointer is over either the interior or border.			
+pointer-events	visibleFill	LITERAL	Speciries that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted interior. (thus fill!='none').			
+pointer-events	visiblePainted	LITERAL	Specifies that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted area (area being either the interior or border).			
+pointer-events	visibleStroke	LITERAL	Specifies that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted border. (thus stroke!='none').			
+shape-rendering	auto	LITERAL	Specifies to apply  a shape-rendering algorithm that balances the trade offs  that occur between optimizing for speed vs crispEdges vs geometric precision.			
+shape-rendering	crispEdges	LITERAL	Specifies to optimize the shape-rendering algorithm for crisp edges.			
+shape-rendering	geometricPrecision	LITERAL	Specifies to optimize the shape-rendering algorithm for geometric precision.			
+shape-rendering	inherit	LITERAL	Specifies to inherit the shape-rendering optimization critera from the parent.			
+shape-rendering	optimizeSpeed	LITERAL	Specifies to optimize the shape-rendering algorithm for speed.			
+stop-color	<color> <icccolor>	CHARACTER	Sets the stop color. The color may be expressed in one of three ways: name (i.e. red),  or  numeric (#f00 or #ff0000) or  rgb (rgb(255,0,0)). An optional ICC color may also be specified as a 2nd component of the color vector.			
+stop-color	currentColor	LITERAL	Specifies to use the *currentColor* as the stop-colorr. The current color is the value of the color specified by the *color* property. 			
+stop-color	inherit	LITERAL	Specifies to inherit the *stop-color* value from the parent.			
+stop-opacity	<opacity-value>	NUMERIC	Specifies the opacity value, a  number between 0 and 1 indicating the opacity to be used as fill , with 1 being opaque and 0 being transparent.			
+stop-opacity	inherit	LITERAL	Specifies to inherit the *stop-opacity* value from the parent.			
+stroke	none	LITERAL	Specifies no stroke (no border outline)			
+stroke-dasharray	<dasharray>	NUMERIC	Sets the stoke-dasharray pattern using a vector of lengths (with optional unit identifier)			
+stroke-dasharray	inherit	LITERAL	Specifies to inherit the *stroke-dasharray* value from the parent.			
+stroke-dasharray	none	LITERAL	Specifies no dash array.			
+stroke-dashoffset	<length>	NUMERIC	Sets distance from dash pattern to dash start given in non-percent units			
+stroke-dashoffset	<percentage>	CHARACTER	Sets distance from dash pattern to dash start given as a percentage of current viewport			
+stroke-dashoffset	inherit	LITERAL	Specifies to inherit the *stroke-dashoffset* value from the parent.			
+stroke-linecap	butt	LITERAL	Specifies the *stroke-linecap* to be a *butt style cap*.			
+stroke-linecap	inherit	LITERAL	Specifies to inherit the *stroke-linecap* value from the parent.			
+stroke-linecap	round	LITERAL	Specifies the *stroke-linecap* to be a *round style cap*.			
+stroke-linecap	square	LITERAL	Specifies the *stroke-linecap* to be a *square style cap*.			
+stroke-linejoin	bevel	LITERAL	Specifies the *stroke-linejoin* to be a *bevel style join*.			
+stroke-linejoin	inherit	LITERAL	Specifies to inherit the *stroke-linejoin* value from the parent.			
+stroke-linejoin	miter	LITERAL	Specifies the *stroke-linejoin* to be a *mitre style join*.			
+stroke-linejoin	round	LITERAL	Specifies the *stroke-linejoin* to be a *round style join*.			
+stroke-miterlimit	<miterlimit>	NUMERIC	Sets the miterlimit , a number greater than 1 which is used to limit the ratio of *mitreLength* to *stroke-width*.			
+stroke-miterlimit	inherit	LITERAL	Specifies to inherit the *stroke-miterlimit* value from the parent.			
+stroke-opacity	<opacity-value>	NUMERIC	Specifies the opacity value, a  number between 0 and 1 indicating the opacity to be used as fill , with 1 being opaque and 0 being transparent.			
+stroke-opacity	inherit	LITERAL	Specifies to inherit the *stroke-opacity* value from the parent.			
+text-anchor	end	LITERAL	Specifies that the text is to be rendered such that it ends at the current (text) position.			
+text-anchor	inherit	LITERAL	Specifies to inherit the *text-anchor* value from the parent.			
+text-anchor	middle	LITERAL	Specifies that the text is to be rendered such that it is centered  at the current (text) position.			
+text-anchor	start	LITERAL	Specifies that the text is to be rendered such that it begins at the current (text) position.			
+text-decoration	inherit	LITERAL	Specifies to inherit the *text-decoration* value from the parent.			
+text-decoration	line-through	LITERAL	Specifies to decorate the text by placing  a line through the text.			
+text-decoration	none	LITERAL	Specifies no text decoration			
+text-decoration	underline	LITERAL	Specifies to decorate the text by underlining  the text.			
+text-rendering	auto	LITERAL	Specifies to apply a *text-rendering* algorithm that balances the trade offs  that occur between optimizing for speed vs legibility vs geometric precision, with emphasis on legibility.			
+text-rendering	geometricPrecision	LITERAL	Specifies to optimize  *text-rendering* for geometric precision.			
+text-rendering	inherit	LITERAL	Specifies to inherit the *text-rendering* value from the parent.			
+text-rendering	optimizeLegibility	LITERAL	Specifies to optimize  *text-rendering* for legibility.			
+text-rendering	optimizeSpeed	LITERAL	Specifies to optimize  *text-rendering* for speed.			
+unicode-bidi	bidi-override	LITERAL	Specifies to override the implicit aspect of biddirectional algorithm and use a strict sequence given by the direction. This applies only to the cases of inline or block-level composed of inline: 			
+unicode-bidi	embed	LITERAL	Specifes an embedding to override of the biddirectional algorithm using the direction given by the *direction* attribute.			
+unicode-bidi	inherit	LITERAL	Specifies to inherit the *unicode-bidi* value from the parent.			
+unicode-bidi	normal	LITERAL	Specifies to use the  implicit ordering of the biddirectional algorithm.			
+visibility	collapse	LITERAL	For non-tables, this has the same effect as hidden. 			
+visibility	hidden	LITERAL	Sets the element invisible, but element may still receive pointer events.			
+visibility	inherit	LITERAL	Specifies to inherit the *visibility* value from the parent.			
+visibility	visible	LITERAL	Sets the element visible.			
+word-spacing	<length>	NUMERIC	Sets a value for the amount of  spacing between words.			
+word-spacing	inherit	LITERAL	Specifies to inherit the *word-spacing* value from the parent.			
+word-spacing	normal	LITERAL	Specifies to use the default *word-spacing* value.			
+writing-mode	inherit	LITERAL	Specifies to inherit the *writing-mode* value from the parent.			
+writing-mode	lr	LITERAL	Specifies *writing-mode* is to be left to right.			
+writing-mode	lr-tb	LITERAL	Specifies *writing-mode* is to be left to right and  top to bottom.			
+writing-mode	rl	LITERAL	Specifies *writing-mode* is to be  right to left.			
+writing-mode	rl-tb	LITERAL	Specifies *writing-mode* is to be right to left, top to bottom.			
+writing-mode	tb	LITERAL	Specifies *writing-mode* is to be top to bottom.			
+writing-mode	tb-rl	LITERAL	Specifies *writing-mode* is to be top to bottom, right to left.			
+stroke-width	inherit	LITERAL	Specifies to inherit the *stroke-width* value from the parent.			
+stroke-width	<percentage>	CHARACTER	Sets the stroke-width value as a precentage of the current viewport.			
+stroke-width	<length>	NUMERIC	Sets the *stroke-width* value using non-percentate units.			
+marker-start	none	LITERAL	Specifies for no marker symbol to be rendered.			
+marker-start	inherit	LITERAL	Specifies to inherit the marker symbol from the parent.			
+marker-start	<funciri>	FUNCIRI	Sets a functional IRI reference to a marker element to be used..			
+marker-start	<marker-element>	ELEMENT	Sets the **marker element** to be used.			
+marker-mid	none	LITERAL	Specifies for no *marker* symbol to be rendered.			
+marker-mid	inherit	LITERAL	Specifies to inherit the *marker* symbol from the parent.			
+marker-mid	<funciri>	FUNCIRI	Sets a functional IRI reference to a **marker element** to be used..			
+marker-mid	<marker-element>	ELEMENT	Sets the **marker element** to be used.			
+marker-end	none	LITERAL	Specifies for no *marker* symbol to be rendered.			
+marker-end	inherit	LITERAL	Specifies to inherit the *marker* symbol from the parent.			
+marker-end	<funciri>	FUNCIRI	Sets a functional IRI reference to a **marker element** to be used..			
+marker-end	<marker-element>	ELEMENT	Sets the **marker element** to be used.			

@@ -192,10 +192,11 @@ genElementPages<-function(){
         attrGrp.DT<- #group by category
           attr.DT[, 
                   rd.item(
-                    rd.emph(category), paste0(linkTo ,collapse=", ")
+                    rd.emph(capitalizeIt(category)), paste0(linkTo ,collapse=", ")
                   ),
                   by=category 
                   ]
+        setorder(attrGrp.DT,category)
         attributesListing<-attrGrp.DT$V1
       } else {
         attributesListing<-"{No Attributes Available}{!}"
@@ -233,10 +234,11 @@ genElementPages<-function(){
       rd.description(description),
       #attributes
       rd.section("Available Attributes (Named Parameters)" ),
-      attributesListing,
+      
+      rd.describe(attributesListing),
       # content Elements
       rd.section("Available Content Elements (Unnamed Parameters)" ),
-      elementsListing,
+      rd.describe(elementsListing),
       #keywords
       rd.keywords("element")
     )

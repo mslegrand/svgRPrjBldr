@@ -1,0 +1,62 @@
+attr	descript	details
+writing-mode 	Governs the initial inline-progression-direction	
+glyph-orientation-vertical 	Controls glyph orientation when the inline-progression-direction is vertical	
+glyph-orientation-horizontal 	Controls glyph orientation when the inline-progression-direction is horizontal	
+direction 	Controls the base writing direction of text	This property specifies the base writing direction of blocks and the direction of embeddings and overrides (see'unicode-bidi') for the Unicode bidirectional algorithm. In addition, it specifies the direction oftablecolumn layout, the direction of horizontaloverflow, and the position of an incomplete last line in a block in case of 'text-align: justify'.
+unicode-bidi 	Governs mixing directionalit for  text in a single line.	The final order of characters in each block-level element is the same as if the bidi control codes had been added as described above, markup had been stripped, and the resulting character sequence had been passed to an implementation of the Unicode bidirectional algorithm for plain text that produced the same line-breaks as the styled text. In this process, non-textual entities such as images are treated as neutral characters, unless their'unicode-bidi'property has a value other than 'normal', in which case they are treated as strong characters in the'direction'specified for the element.
+text-anchor 	Governs positioning a string of text relative to a given point	Thetext-anchorproperty is applied to each individualtext chunkwithin a giventextelement. Each text chunk has an initial current text position, which represents the point in the user coordinate system resulting from (depending on context) application of thexandyattributes on thetextelement, anyxoryattribute values on atspan,treforaltGlyphelement assigned explicitly to the first rendered character in a text chunk, or determination of the initial current text position for atextPathelement.
+dominant-baseline 	Govnerns the dominant baseline of a text element.	"The ""dominant-baseline"" property is used to determine or re-determine a scaled-baseline-table. A scaled-baseline-table is a compound value with three components: a baseline-identifier for the dominant-baseline, a baseline-table and a baseline-table font-size. Some values of the property re-determine all three values; other only re-establish the baseline-table font-size. When the initial value,auto, would give an undesired result, this property can be used to explicitly set the desire scaled-baseline-table."
+alignment-baseline 	Governs baseline alignment with parent, that is which baseline of this element is to be aligned with the corresponding baseline of the parent.	
+baseline-shift 	Governs shifing of the base-line relative to the dominant baseline of the parent.	
+font-family 	Governs the candidiates of  font families to be used in text rendering.	
+font-style 	Governs which font face to use:  normal, italic or oblique face.	
+font-variant 	Governs the which font-variant to use for lower case characters:  normal glyphs or small-caps glyphs.	
+font-weight 	Governs the boldness or lightness of the glyphs used to render the text	
+font-stretch 	Governs the amount of condensing or expansion in the glyphs used to render the text.	
+font-size 	Governs the size of the font .	
+font-size-adjust 	Govern the aspect values to preserve the when using a substitute font.	
+font 	Shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family. 	
+kerning 	Governs kerning:  inter-glyph spacing adjustments.	
+letter-spacing 	Governs supplemental to kerning spacing between letters.	
+word-spacing 	Governs the  spacing behavior between words.	
+text-decoration 	Governs the application text decorations. (Such as blinking)	
+overflow 	Governs the behaviour of an element when it overflows its viewport.	
+clip 	Governs clipping along the bounds of the elements viewport.	
+clip-path 	Specifies path for clipping.	
+clip-rule 	Specifies whether to use an even-odd rule for clipping	
+mask 	Governs what to use for masking	
+opacity 	Governs the  opacity.	
+fill 	Defines the paints used to fill the interior of a given graphical element.	
+fill-rule 	Governs which algorithm to use for determination of  the  interior of the shape. When rendering a shape, this algorithm will be used to perform a  fill operation. 	
+fill-opacity 	Defines the opacity of the painting operation used to paint the interior the current object.	
+stroke 	Defines the paint used for the outline of the given graphical element	
+stroke-width 	Defines the width of the stroke on the current object.	
+stroke-linecap 	Defines the shape to be used at the end of open subpaths when they are stroked.	
+stroke-linejoin	Defines the shape to be used at the corners of paths or basic shapes when they are stroked.	
+stroke-miterlimit 	Defines a limit on the ratio of the miter length to the stroke-width.	
+stroke-dasharray 	Defines the pattern of dashes and gaps used to stroke paths.	
+stroke-dashoffset 	Defines the distance into the dash pattern to start the dash.	
+stroke-opacity 	Defines the opacity of the painting operation used to stroke the current object.	
+display 	Governs whether an element or container will be rendered.	
+visibility 	Governs whether the current graphics element will be visible.	
+marker-start 	Defines the marker that is to be rendered at the first vertex of the given **path** element or basic shape.	
+marker-mid 	Defines the marker  that is to be rendered at the final vertex of the given **path** element or basic shape. 	
+marker-end 	Defines the marker that is to be rendered at every vertex other that the first and final vertices for the given path element or basic shape. 	
+marker 	Defines the marker that is to be rendered at every vertex  for the given **path**  element or basic shape.  This includes both the first and final vertices of the  *path*.	
+color-interpolation 	Governs the optimization strategy for color-interpolation.	
+color-interpolation-filters 	Governs the color space for imaging operations performed via filter effects.	
+color-rendering 	Governs the color space for gradient interpolations, color animations and alpha compositing.	
+shape-rendering 	Governs the optimization strategy of rendering shapes.	
+text-rendering 	Governs the optimization strategy of rendering text.	
+image-rendering 	Governs the optimization strategy of rendering images.	
+color 	Defines *currentColor*, which is may be used indirectly as fall-back color for the properties:  *fill*, *stroke*, *stop-color*, *flood-color* and *lighting-color* 	
+color-profile 	Governs what color profile to use.	
+pointer-events 	Governs the under what conditions this  graphics element can be the targetof a pointer event.	
+cursor 	Governs the type of cursor to display.	
+filter 	Defines which filter is to be applied to this element. (This element being a graphical element or a container such as **svg** or **g**).	
+enable-background 	Governs the accumulation of background images of container elements.	
+lighting-color 	Governs the color of the light source for filter primitives feDiffuseLighting and feSpecularLighting.	
+flood-color 	Defines what color to use to flood the current filter primitive subregion.	
+flood-opacity 	Defines the opacity value to be used across the entire filter primitive subregion.	
+stop-color 	Defines the color to achieve at the gradient stop position.	
+stop-opacity 	Defines the opacity  to achieve at the gradient stop position.	

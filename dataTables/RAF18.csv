@@ -1,0 +1,330 @@
+attr	loc	N	choice	custom	EQN	Multi	epilog	descript	prolog
+accent-height	FontFaceElementAccentHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the distance from the font origin to the top of the accent characters.	value
+accumulate	AccumulateAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether or not the animation is cumulative.	either
+additive	AdditiveAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether or not the animation is additive.	either
+alphabetic	FontFaceElementAlphabeticAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the alignment coordinate for glyphs to achieve an alphabetic baseline alignment	value
+amplitude	feComponentTransferAmplitudeAttribute	1	FALSE	TRUE	TRUE	FALSE		Sets the amplitude of the gamma function to be used when transfer type=gamma.	value
+arabic-form	GlyphElementArabicFormAttribute	4	TRUE	FALSE	FALSE	FALSE		Governs which of the four possible forms for an arabic glyph	oneOf
+ascent	FontFaceElementAscentAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the maximum unaccented height of the font, as measured within the font coordinate system.	value
+attributeName	AttributeNameAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the name of the target attribute.	value
+attributeType	AttributeTypeAttribute	3	TRUE	FALSE	FALSE	FALSE		Governs the namespace in which the target attribute and its associated values are defined.	oneOf
+azimuth	feDistantLightAzimuthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the angle between the x-axis and the projection into the xy-plane of the vector from the origin to the light source.	angle
+baseFrequency	feTurbulenceBaseFrequencyAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the base frequency for the noise function.	vec12
+baseProfile	SVGElementBaseProfileAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a minimal SVG language profile which considered to be necessary for proper rendering.	value
+bbox	FontFaceElementBboxAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the maximal bounding box of the font.	value
+begin	BeginAttribute	7	TRUE	FALSE	FALSE	FALSE		Governs when the animation should begin.	oneOrMore
+bias	feConvolveMatrixElementBiasAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a bias shift which is to be applied, component-wise,  to the result of the convolution.	value
+by	ByAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a relative offset value for the animation.	value
+calcMode	CalcModeAttribute	4	TRUE	FALSE	FALSE	FALSE		Governs the interpolation model for the animation.	oneOf
+cap-height	FontFaceElementCapHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the uppercase glyphs of the fon. The height is measured in terms of the font coordinate system.	value
+class	ClassAttribute	2	TRUE	FALSE	FALSE	FALSE		Sets  one or more class names to be associated with this element.	either
+clipPathUnits	ClipPathElementClipPathUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs how to interpret the coordinates for the contents of the clipPath. That should they be interpeted  as objectBoundingBox or userSpaceOnUse?	either
+contentScriptType	ContentScriptTypeAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the default scripting language for the given SVG document fragment.	value
+contentStyleType	ContentStyleTypeAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the default style sheet language for the given document.	value
+cx	CircleElementCXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the center of the circle.	coordinate
+cx	EllipseElementCXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the center of the ellipse.	coordinate
+cx	RadialGradientElementCXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the center of the ending-stop  circle of the radial gradient.	coordinate
+cy	CircleElementCYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the center of the circle.	coordinate
+cy	EllipseElementCYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the center of the ellipse.	coordinate
+cy	RadialGradientElementCYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the ending-stop circle of the radial gradient.	coordinate
+d	DAttribute	1	FALSE	FALSE	FALSE	FALSE	pathData	Sets the  path-data points which define the outline of a shape.	pathData
+d	GlyphElementDAttribute	2	TRUE	FALSE	FALSE	FALSE	pathData	Sets the path-data points used to create a glyph outline.	pathData
+descent	FontFaceElementDescentAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the maximum unaccented depth of the font. Measurements to be  expressed in terms of  the font coordinate system.	value
+diffuseConstant	feDiffuseLightingDiffuseConstantAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the kd term of the phong lighting model.	value
+divisor	feConvolveMatrixElementDivisorAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a divisor to be  applied  to the results of the convolution. This is generally used  for evening out the color values.	value
+dur	DurAttribute	3	TRUE	FALSE	FALSE	FALSE		Governs the simple duration.	oneOf
+dx	AltGlyphElementDXAttribute	1	FALSE	FALSE	FALSE	FALSE		Set shifts in the current x-position prior to rendering.	lengthVector
+dx	GlyphRefElementDXAttribute	1	FALSE	FALSE	FALSE	FALSE		Set shifts in the current x-position prior to rendering.	value
+dx	TSpanElementDXAttribute	1	FALSE	FALSE	FALSE	FALSE		Set shifts in the current x-position prior to rendering.	lengthVector
+dx	TextElementDXAttribute	1	FALSE	FALSE	FALSE	FALSE		Set shifts in the current x-position prior to rendering.	lengthVector
+dx	feOffsetDxAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets how much  of an  offset, the input graphics should have along the x-axis.	value
+dy	AltGlyphElementDYAttribute	1	FALSE	FALSE	FALSE	FALSE		Set shifts in the current y-position prior to rendering.	lengthVector
+dy	GlyphRefElementDYAttribute	1	FALSE	FALSE	FALSE	FALSE		Set shifts in the current y-position prior to rendering.	value
+dy	TSpanElementDYAttribute	1	FALSE	FALSE	FALSE	FALSE		Set shifts in the current y-position prior to rendering.	lengthVector
+dy	TextElementDYAttribute	1	FALSE	FALSE	FALSE	FALSE		Set shifts in the current y-position prior to rendering.	lengthVector
+dy	feOffsetDyAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets how much  of an  offset, the input graphics should have along the y-axis.	value
+edgeMode	feConvolveMatrixElementEdgeModeAttribute	3	TRUE	FALSE	FALSE	FALSE		Governs how the convolution is computed along the edges.	oneOf
+elevation	feDistantLightElevationAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the angle between the xy-plane and the vector from the origin to the light source.	angle
+end	EndAttribute	7	TRUE	FALSE	FALSE	FALSE		Governs the ending constraint for active duration.	oneOrMore
+exponent	feComponentTransferExponentAttribute	1	FALSE	TRUE	TRUE	FALSE		Sets the exponent of the gamma function that is to be used when the component transfer type=gamma	value
+externalResourcesRequired	ExternalResourcesRequiredAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether or not resources external to the current document are required.	either
+feBlendIn2Attribute	feBlendIn2Attribute	8	TRUE	FALSE	FALSE	FALSE		Set the  second graphics input to be used to perform the blending.	oneOf
+fill	FillAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether to freeze or to remove the animation upon completion.  Freeze means stop in place, remove means to return to the state prior to the beginning of the animation.	either
+filterRes	FilterElementFilterResAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width and height of the intermediate filtered  images in pixels.	vec12
+filterUnits	FilterElementFilterUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Set the  units to be used to interpret  the x, y, width, height  attributes within  the filter effects region.	either
+font-family	FontFaceElementFontFamilyAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a prioritized list of font families.  This instructs the user agent to use  first available font in the list.	value
+font-size	FontFaceElementFontSizeAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the font size.	length
+font-stretch	FontFaceElementFontStretchAttribute	10	TRUE	FALSE	FALSE	FALSE		Governs the width or narrowness, of the font face relative to others within the same font family.	oneOf
+font-style	FontFaceElementFontStyleAttribute	4	TRUE	FALSE	FALSE	FALSE		Governs the font style ( for example, italic, bold, )	oneOf
+font-variant	FontFaceElementFontVariantAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether or not to use a small-caps font variant for bicameral fonts.	either
+font-weight	FontFaceElementFontWeightAttribute	12	TRUE	FALSE	FALSE	FALSE		Governs the weight of the font (ie. Bold, etc)	oneOf
+format	AltGlyphElementFormatAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the fonts alt-glyph format.	value
+format	GlyphRefElementFormatAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the fonts glyph font.	value
+from	FromAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the starting value of the animation.	value
+fx	RadialGradientElementFXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the focal point of the radial gradient.	coordinate
+fy	RadialGradientElementFYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the focal point of the radial gradient.	coordinate
+g1	HKernElementG1Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets a collection of names to be used as  candiates for the first glyph  in the kerning pair.	value
+g2	HKernElementG2Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets a collection of names to be used as candiates for the second glyph in the kerning pair.	value
+glyph-name	GlyphElementGlyphNameAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a name for a glyph	value
+glyphRef	AltGlyphElementGlyphRefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the alt-glyph reference identifier.	value
+glyphRef	GlyphRefElementGlyphRefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the glyph reference identifier.	value
+gradientTransform	LinearGradientElementGradientTransformAttribute	1	FALSE	FALSE	FALSE	FALSE	transform	Sets a coordinate transformation to be applied to the linear gradient. This coordinate transformation can constructed as the composition of a sequence of the simpler basic linear transformations.	value
+gradientTransform	RadialGradientElementGradientTransformAttribute	1	FALSE	FALSE	FALSE	FALSE	transform	Sets a coordinate transformation to be applied to the radial gradient.  This coordinate transformation can constructed as the composition of a sequence of the simpler basic linear transformations.	value
+gradientUnits	LinearGradientElementGradientUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether to interpret the coordinates of x1, y1, x2, y2 as either objectBoundingBox or userSpaceOnUse.	either
+gradientUnits	RadialGradientElementGradientUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether to interpret the coordinates of cx, cy, r, fx, fy as either objectBoundingBox or userSpaceOnUse.	either
+hanging	FontFaceElementHangingAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the alignment coordinate offset for a horizontally oriented glyph layout in order to achieve a hanging baseline alignment.	value
+height	FilterElementHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the filter effects region.	length
+height	FilterPrimitiveHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the filter primitive subregion. (Default is the height of the filter)	length
+height	ForeignObjectElementHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the rectangular region into which the referenced document is placed.	length
+height	ImageElementHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the rectangular region into which the referenced document is placed.	length
+height	MaskElementHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the largest possible offscreen buffer.	length
+height	PatternElementHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the pattern element	length
+height	RectElementHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the rectangle.	length
+height	SVGElementHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the svg.	length
+height	UseElementHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the rectangular region into which the referenced element is to be placed.	length
+horiz-adv-x	FontElementHorizAdvXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the amount of horizontal advance to after rendering the given horizontally orientated glyph.	value
+horiz-adv-x	GlyphElementHorizAdvXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the amount of horizontal advance to after rendering the given horizontally orientated glyph.	value
+horiz-origin-x	FontElementHorizOriginXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the origin to be used when rendering the horizontally oriented text.	coordinate
+horiz-origin-y	FontElementHorizOriginYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the origin to be used when rendering the horizontally oriented text.	coordinate
+id	IDAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a unique id of this element.	value
+ideographic	FontFaceElementIdeographicAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an offset within the font coordinate system to provide an alignment of a horizontally oriented glyph layout, with the goal of achieving an ideographic baseline alignment.	value
+in1	FilterPrimitiveIn1Attribute	8	TRUE	FALSE	FALSE	FALSE		Sets the primary graphics input to be used for the given filter primitive.	oneOf
+in2	FilterPrimitiveIn2Attribute	8	TRUE	FALSE	FALSE	FALSE		Sets the secondary graphics input to be used for the given filter primitive.	oneOf
+intercept	feComponentTransferInterceptAttribute	1	FALSE	TRUE	TRUE	FALSE		Sets the intercept to be used when the component transfer type is linear	value
+k	HKernElementKAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an how much to  decrease the spacing between the two glyphs in the kerning pair	value
+k1	feCompositeK1Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the value to be used for k1 when the composite operator is arithmetic.	value
+k2	feCompositeK2Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the value to be used for k2 when the composite operator is arithmetic.	value
+k3	feCompositeK3Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the value to be used for k3 when the composite operator is arithmetic.	value
+k4	feCompositeK4Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the value to be used for k4 when the composite operator is arithmetic.	value
+kernelMatrix	feConvolveMatrixElementKernelMatrixAttribute	2	TRUE	FALSE	FALSE	FALSE		Sets the kernelMatrix to be used in the convolution filter.	either
+kernelUnitLength	feConvolveMatrixElementKernelUnitLengthAttribute	1	FALSE	FALSE	FALSE	FALSE		Governs the spacing between successive rows and columns in the kernel matrix, That spacing, dx dy ,is interpreted in the current filter units	vec12
+kernelUnitLength	feDiffuseLightingKernelUnitLengthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the dx dy values to be used in the surface normal calculations.	vec12
+kernelUnitLength	feSpecularLightingKernelUnitLengthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the dx dy values to be used in the surface normal calculations.	vec12
+keyPoints	KeyPointsAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the points corresponding to the keyTime values. The keyTime and keyPoints together form a contraint that at each specific keyTime, the object should be located at the corresponding key point. This constaint may cause the object to move faster or slower along the path between the intervals defined by the keytimes/keypoints. Another of saying this is that keyTime-keyPoints are used to control the pacing of the motion along the path.	value
+keySplines	KeySplinesAttribute	2	TRUE	FALSE	FALSE	FALSE		Sets a set of Bzier control points associated with the keyTimes attribute.	either
+keyTimes	KeyTimesAttribute	2	TRUE	FALSE	FALSE	FALSE		Sets the time values  corresponding to the keyPoint values. The keyTime and keyPoints together form a contraint that at each specific keyTime, the object should be located at the corresponding key point. This constaint may cause the object to move faster or slower along the path between the intervals defined by the keytimes/keypoints. Another of saying this is that keyTime-keyPoints are used to control the pacing of the motion along the path.	either
+lang	GlyphElementLangAttribute	1	FALSE	FALSE	FALSE	FALSE		Provides a set of languages ot the user agent considered to be supported by this glyph.	value
+lengthAdjust	TextElementLengthAdjustAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the adjustments to employ to try to render the text with a length matching that specified by the textLength attribute. More specifically, indicates whether to use just spacing or a combination of spacing and glyphs compression or stretching to match the rendered text length match with the value specified by the attribute  textLength.	either
+limitingConeAngle	feSpotLightLimitingConeAngleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the angle in degrees between the spot light axis and the spot light cone.	value
+local	ColorProfileElementLocalAttribute	1	FALSE	FALSE	FALSE	FALSE		Assigns a unique ID for a locally stored color profile, for referencing elsewhere.	value
+markerHeight	MarkerHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the marker viewport.	length
+markerUnits	MarkerUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Determines how to interpret marker coordinates, the choices being either using the stroke width as 1 unit (strokeWidthst), or using the units inherited from current user coordinate system ( userSpaceOnUse).	either
+markerWidth	MarkerWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width of the viewport into which the marker is to be fitted	length
+maskContentUnits	MaskElementMaskContentUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether to interpret the units for coordinates of the contents of mask either as  as fractions of the bounding box (objectBoundingBox) or using the units inherited from current user coordinate system ( userSpaceOnUse).	either
+maskUnits	MaskElementMaskUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether to interpret the coordinates x,y,width, height as objectBoundingBox or userSpaceOnUse	either
+mathematical	FontFaceElementMathematicalAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an offset within the font coordinate system to provide an alignment of a horizontally oriented glyph layout, with the goal of achieving an mathematical baseline alignment.	value
+max	MaxAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the maximum length of time that the animation remains active..	either
+media	StyleElementMediaAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a set of one or more media descriptors used to indicate intended destination medium for the style information.	value
+method	TextPathElementMethodAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether to allow stretching and warping of theglyphs along the given path..	either
+min	MinAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the minimum length of time that the animation remains active.	either
+mode	feBlendModeAttribute	5	TRUE	TRUE	FALSE	FALSE	feBlend	Governs which algorithm to used for blending of the two image sources.	oneOf
+name	ColorProfileElementNameAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the color profile name.	value
+name	FontFaceNameElementNameAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the name of the local font.	value
+numOctaves	feTurbulenceNumOctavesAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the numOctaves parameter to be used by the noise generation function for feTurbulence	value
+offset	StopElementOffsetAttribute	1	FALSE	FALSE	FALSE	FALSE		Governs the placement of the gradient stop.	value
+offset	feComponentTransferOffsetAttribute	1	FALSE	TRUE	TRUE	FALSE		Sets the offset of the gamma function to be used when the component transfer type is gamma.	value
+onabort	OnAbortEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to be executed when an abort event is received	script
+onactivate	OnActivateEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an activate event is received	script
+onbegin	OnBeginEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an begin event is received	script
+onclick	OnClickEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an click event is received	script
+onend	OnEndEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an end event is received	script
+onerror	OnErrorEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an error event is received	script
+onfocusin	OnFocusInEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an focusin event is received	script
+onfocusout	OnFocusOutEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an focusout event is received	script
+onload	OnLoadEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an load event is received	script
+onmousedown	OnMouseDownEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an mousedown event is received	script
+onmousemove	OnMouseMoveEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an mousemove event is received	script
+onmouseout	OnMouseOutEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an mouseout event is received	script
+onmouseover	OnMouseOverEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an mouseover event is received	script
+onmouseup	OnMouseUpEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an mouseup event is received	script
+onrepeat	OnRepeatEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an repeat event is received	script
+onresize	OnResizeEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an resize event is received	script
+onscroll	OnScrollEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an scroll event is received	script
+onunload	OnUnloadEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an unload event is received	script
+onzoom	OnZoomEventAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the script to execute when an zoom event is received	script
+operator	feMorphologyOperatorAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether to erode (make thin) or dilate (make fatter).	either
+operator	feCompositeOperatorAttribute	6	TRUE	FALSE	TRUE	FALSE	feCompositeOperator	Governs the behaviour of the composite operation.	oneOf
+order	feConvolveMatrixElementOrderAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the number of cells in each dimension of the kernel matrix to be used in a convolution.	vec12
+orient	OrientAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the orientation of the marker,	angle
+orientation	GlyphElementOrientationAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the orientation of the the glyph with respect to the inline-progression-direction.	either
+origin	OriginAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the origin, but has no effect in SVG, but howerver may be applicable when using CSS for positioning.	value
+overline-position	FontFaceElementOverlinePositionAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the desired overline position, as measured within the font-coordinate system.	value
+overline-thickness	FontFaceElementOverlineThicknessAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the desired overline thickness, as measured within the font-coordinate system.	value
+panose-1	FontFaceElementPanose1Attribute	1	FALSE	FALSE	FALSE	FALSE		Set panrose-1 numbers (for True-type font matching and classification)	value
+path	PathAttribute	2	TRUE	FALSE	FALSE	FALSE	pathData	Governs the path of the animated motion.	pathData
+pathLength	PathLengthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the desired length of the path in user units.	value
+patternContentUnits	PatternElementPatternContentUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether to interpret the coordinate of the contents as fractions of the of the pattern bounding box (objectBoundingBox), or to simply inherit (userSpaceOnUse).	either
+patternTransform	PatternElementPatternTransformAttribute	1	FALSE	FALSE	FALSE	FALSE	transform	Sets an optional coordinate transformation to be applied prior to rendering the pattern.	value
+patternUnits	PatternElementPatternUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether the pattern coordinate for x, y, width, and height are to be interpreted as fractions of the bounding box or to be inherited from the user space. objectBoundingBox or userSpaceOnUse.	either
+points	PolygonElementPointsAttribute	2	TRUE	FALSE	FALSE	FALSE		Sets the points corresponding to the vertices of the polygon.	either
+points	PolylineElementPointsAttribute	2	TRUE	FALSE	FALSE	FALSE		Sets the points corresponding to the vertices of the polyline.	either
+pointsAtX	feSpotLightPointsAtXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the X-location of where the spot light is pointing.	value
+pointsAtY	feSpotLightPointsAtYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the Y-location of where the spot light is pointing.	value
+pointsAtZ	feSpotLightPointsAtZAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the Z-location of where the spot light is pointing.	value
+preserveAlpha	feConvolveMatrixElementPreserveAlphaAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether or not  to apply the convolution to the alpha channel.	either
+preserveAspectRatio	PreserveAspectRatioAttribute	1	FALSE	FALSE	FALSE	FALSE	preserveAspectRatio	Governs the aspect ration preservation  and alignment of an image when scaling.	value
+primitiveUnits	FilterElementPrimitiveUnitsAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the units for coordinate system of the filter primitive subregion.	either
+r	CircleElementRAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the radius of a circle.	length
+r	RadialGradientElementRAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the radius of the outer circle of the radial gradient.	length
+radius	feMorphologyRadiusAttribute	1	FALSE	FALSE	FALSE	FALSE		Governs the amount of  dilation or erodion in the x and y directions..	vec12
+refX	MarkerElementRefXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the marker reference point within the marker coordinate system.  Upon rendering, the marker reference point coincides with the point on the curve where the marker is to be attached.	coordinate
+refY	MarkerElementRefYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the marker reference point within the marker coordinate system.  Upon rendering, the marker reference point coincides with the point on the curve where the marker is to be attached.	coordinate
+rendering-intent	ColorProfileElementRenderingIntentAttribute	5	TRUE	FALSE	FALSE	FALSE		Governs a color profile rendering intent.	oneOf
+repeatCount	RepeatCountAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the number of iterations of the animation.	either
+repeatDur	RepeatDurAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the total amount of time that the animation can continue (including repeats)	either
+requiredExtensions	RequiredExtensionsAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a check-list of IRI references to required extensions. The user agent will check against the entries, return true only if all entries are supported.	value
+requiredFeatures	RequiredFeaturesAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a check-list of required features, used to determine whether an given element is renderable.	value
+restart	RestartAttribute	3	TRUE	FALSE	FALSE	FALSE		Provides the conditions for a restart of an animation.	oneOf
+result	FilterPrimitiveResultAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a name to assign to the filter primitive.	value
+rotate	AltGlyphElementRotateAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a sequence of  one or more rotations to be applied to consecutive glyphs upon rendering.	value
+rotate	RotateAttribute	3	TRUE	FALSE	FALSE	FALSE		Governs the rotation of an object along a path.	angle
+rotate	TSpanElementRotateAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a sequence of  one or more rotations to be applied to consecutive glyphs upon rendering.	value
+rotate	TextElementRotateAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a sequence of  one or more rotations to be applied to consecutive glyphs upon rendering.	value
+rx	EllipseElementRXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-radius of the ellipse.	length
+rx	RectElementRXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-radius of the rounded corner.	length
+ry	EllipseElementRYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-radius of the ellipse.	length
+ry	RectElementRYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-radius of the rounded corner.	length
+scale	feDisplacementMapScaleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the displacement scaling factor to be applied.	value
+seed	feTurbulenceSeedAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the seed for the pseudo random number generator used in creating the turbulence effect..	value
+slope	FontFaceElementSlopeAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the vertical stroke angle of the font.	angle
+slope	feComponentTransferSlopeAttribute	1	FALSE	TRUE	TRUE	FALSE		Sets the slope to be used when the transfer type is linear	value
+spacing	TextPathElementSpacingAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs the spacing of individual glyphs when rendering along a given path.	either
+specularConstant	feSpecularLightingSpecularConstantAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the  ks term in the Phong lighting model.	value
+specularExponent	feSpecularLightingSpecularExponentAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the  specular term (the exponent)  in the specular lighting.  This  controls how shiny the object appears.	value
+specularExponent	feSpotLightSpecularExponentAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the exponent controlling the focus of the spot light.	value
+spreadMethod	LinearGradientElementSpreadMethodAttribute	3	TRUE	FALSE	FALSE	FALSE		Governs the behaviour that should occur if the gradient starts or ends inside the bounds of the target rectangle.	oneOf
+spreadMethod	RadialGradientElementSpreadMethodAttribute	3	TRUE	FALSE	FALSE	FALSE		Governs the behaviour that should occur if the gradient starts or ends inside the bounds of the target rectangle.	oneOf
+startOffset	TextPathElementStartOffsetAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the offset from the start of the path to the initial text position,	length
+stdDeviation	feGaussianBlurStdDeviationAttribute	1	FALSE	FALSE	TRUE	FALSE		Sets the x and y standard deviations to be used by the Gaussian Blur algorithm..	vec12
+stemh	FontFaceElementStemhAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the horizontal stem width.	value
+stemv	FontFaceElementStemvAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the vertical stem width.	value
+stitchTiles	feTurbulenceStitchTilesAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether or not to stitch the tiles together when performing the turbulence operation..	either
+strikethrough-position	FontFaceElementStrikeThroughPositionAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the preferred positioning within the font-coordinate system for rendering a strikethrough.	value
+strikethrough-thickness	FontFaceElementStrikeThroughThicknessAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the preferred thickness using units from the font-coordinate system tp render a strikethrough.	value
+string	FontFaceFormatElementStringAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets which  formats are supported by the given font.	value
+style	StyleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the style information for the current element.	value
+surfaceScale	feDiffuseLightingSurfaceScaleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the A_in scale factor used to produce the height of the surface.	value
+surfaceScale	feSpecularLightingSurfaceScaleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the A_in scale factor used to produce the height of the surface.	value
+systemLanguage	SystemLanguageAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets which  languages to match against user preferences.	value
+tableValues	feComponentTransferTableValuesAttribute	1	FALSE	TRUE	TRUE	FALSE		Sets the lookup table to be used when the transfer type is table	value
+target	AElementTargetAttribute	6	TRUE	FALSE	FALSE	FALSE		Governs the manner in which the link is opened. That is where is the target placed?	oneOf
+targetX	feConvolveMatrixElementTargetXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-position of the target pixel relative to the convolution matrix.	value
+targetY	feConvolveMatrixElementTargetYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-position of the target pixel relative to the convolution matrix.	value
+textLength	TSpanElementTextLengthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the intended text length.	length
+textLength	TextElementTextLengthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the intended text length.	length
+title	StyleElementTitleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an advisory title for the style element.	value
+to	SetElementToAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the value for the attribute to be assign and  maintained for  the duration of the set element.	value
+to	ToAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the value to be attained by the end of the animation.	value
+transform	TransformAttribute	1	FALSE	FALSE	FALSE	FALSE	transform	Sets an orderd list of transform definitions to be applied prior to rendering..	value
+type	AnimateTransformElementTypeAttribute	5	TRUE	FALSE	FALSE	FALSE		Governs the type of transformation which is to have its values change over time.	oneOf
+type	ScriptElementTypeAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets which scripting language to use.	value
+type	StyleElementTypeAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the style sheet language of the element's contents.	value
+type	feColorMatrixTypeAttribute	4	TRUE	FALSE	FALSE	FALSE		Governs the type of matrix operation that the feColorMatrix represents.	oneOf
+type	feComponentTransferTypeAttribute	5	TRUE	FALSE	TRUE	FALSE	feComponentTransfer	Governs the model of the component transfer. (linear, table, discrete, identity, gamma)	oneOf
+type	feTurbulenceTypeAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs which model of turbublence to use.	either
+u1	HKernElementU1Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the  first glyphs candidates.	value
+u2	HKernElementU2Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the  second glyphs candidates.	value
+underline-position	FontFaceElementUnderlinePositionAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the preferred positioning using  the font-coordinates for rendering an underline.	value
+underline-thickness	FontFaceElementUnderlineThicknessAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the preferred thickness using the seame units as the font-coordinates to render a underline.	value
+unicode	GlyphElementUnicodeAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a string of Unicode characters that are to correspond to this glyph.	value
+unicode-range	FontFaceElementUnicodeRangeAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the range of ISO 10646 characters [UNICODE] to be covered by the glyphs in the font.	value
+units-per-em	FontFaceElementUnitsPerEmAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the the number of coordinate units along the sides the em square of the glyph design grid	value
+v-alphabetic	FontFaceElementVertAlphabeticAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an alignment coordinate adjustment for a vertically oriented glyph layout to aid in achieving an  alphabetic baseline alignment.	value
+v-hanging	FontFaceElementVertHangingAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an alignment coordinate adjustment for a vertically oriented glyph layout to aid in achieving an  hanging baseline alignment.	value
+v-ideographic	FontFaceElementVertIdeographicAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an alignment coordinate adjustment for a vertically oriented glyph layout to aid in achieving an  ideographic  baseline alignment.	value
+v-mathematical	FontFaceElementVertMathematicalAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an alignment coordinate adjustment for a vertically oriented glyph layout to aid in achieving an  mathematical baseline alignment.	value
+values	ValuesAttribute	2	TRUE	FALSE	FALSE	FALSE		Sets thef animation values to be used for the given animation type.	either
+values	feColorMatrixValuesAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the values the feColorMatrix that is to be used in the RGBA color transformation.	value
+version	SVGElementVersionAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the svg version number which this  fragment is based upon.	value
+vert-adv-y	FontElementVertAdvYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the amount to advance to occur after rendering this glyph, where both the orientation and the direction of advance are vertical.	value
+vert-adv-y	GlyphElementVertAdvYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the amount to advance to occur after rendering this glyph, where both the orientation and the direction of advance are vertical.	value
+vert-origin-x	FontElementVertOriginXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the glyphs origin to be applied to a vertically orientented text. This value is to be interpreted within the fonts coordinate system.	value
+vert-origin-x	GlyphElementVertOriginXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the glyphs origin to be applied to a vertically orientented text. This value is to be interpreted within the fonts coordinate system.	value
+vert-origin-y	FontElementVertOriginYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the glyphs origin to be applied to a vertically orientented text. This value is to be interpreted within the fonts coordinate system.	value
+vert-origin-y	GlyphElementVertOriginYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the glyphs origin to be applied to a vertically orientented text. This value is to be interpreted within the fonts coordinate system.	value
+viewBox	ViewBoxAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the size and placement of the viewBox. The viewBox is a rectangular region into which the viewport is mapped.	value
+viewTarget	ViewElementViewTargetAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the target object to be for this view.	value
+width	FilterElementWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width of the filter region.	length
+width	FilterPrimitiveWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width of the filter primitive subregion. The processing of a filter primitive is restricted to the filter primitive subregion.	length
+width	ForeignObjectElementWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Set the width of the region into which the  foreign object is to be placed.	length
+width	ImageElementWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Set the width of the region into which the image is to be placed.	length
+width	MaskElementWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width of the largest possible offscreen buffer.	length
+width	PatternElementWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width of the tile of a pattern element	length
+width	RectElementWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width of the rectangle.	length
+width	SVGElementWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width of the svg.	length
+width	UseElementWidthAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the width of the rectangular region where the element referenced by use is to be placed.	length
+widths	FontFaceElementWidthsAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the glyphs widths for each individual glyph in terms of the design grid.	value
+x	AltGlyphElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinates for the alternative glyphs..	coordinateVector
+x	CursorElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the cursor point, this coordinate being interpreted using the cursors coordinate system.	coordinate
+x	FilterElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the left-hand side of the filter effects region.	coordinate
+x	FilterPrimitiveXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the filter primitive subregion. The processing of a filter primitive is restricted to the filter primitive subregion.	coordinate
+x	ForeignObjectElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the left side of rectangular region where the foreign object is to be placed.	coordinate
+x	GlyphRefElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the glyph, the whose value is interpreted within the fonts coordinate system.	value
+x	ImageElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the left side of the rectangular region where the image is to be placed.	coordinate
+x	MaskElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the left-side of the rectangular region defining the largest possible offscreen buffer.	coordinate
+x	PatternElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate (left) of the tile of the pattern element	coordinate
+x	RectElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the left side of the rectangle.	coordinate
+x	SVGElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the left side of an embedded svg. (Revelant only for embedded svg elements)	coordinate
+x	TSpanElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the tspan x-coordinate(s)	coordinateVector
+x	TextElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the text x-coordinate(s).	coordinateVector
+x	UseElementXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the left side of the region where an element referenced by use is to be placed.	coordinate
+x	fePointLightXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the point light source.	value
+x	feSpotLightXAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the spot light source.	value
+x-height	FontFaceElementXHeightAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the height of the lowercase glyphs of the given font, where the value of the height is in terms of the units used by the font coordinate system.	value
+x1	LineElementX1Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the first point of the line.	coordinate
+x1	LinearGradientElementX1Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the starting point for a linear gradient.	coordinate
+x2	LineElementX2Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the second point of the line	coordinate
+x2	LinearGradientElementX2Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the x-coordinate of the ending point for a linear gradient.	coordinate
+xChannelSelector	feDisplacementMapXChannelSelectorAttribute	4	TRUE	FALSE	FALSE	FALSE		Governs which channel (R|G|B|A) of the image given by in2 to be used for the computing the amount of displacement of of the image given by in1 in the x direction.	oneOf
+xlink:actuate	AElementXLinkActuateAttribute	1	FALSE	FALSE	FALSE	FALSE		For XLink-aware processors, governs the conditions of loading the linked resource.	value
+xlink:actuate	XLinkActuateAttribute	1	FALSE	FALSE	FALSE	FALSE		For XLink-aware processors, governs the conditions of loading the linked resource.	value
+xlink:arcrole	XLinkArcRoleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference which is to identify some resource that describes the intended property.	value
+xlink:href	AElementXLinkHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference for location of a resource.	value
+xlink:href	AltGlyphElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to either a glyph or altGlyphDef.	value
+xlink:href	ColorProfileElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to an ICC color profile resource.	value
+xlink:href	CursorElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to a cursor image element or cursor image file.	value
+xlink:href	FilterElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to different filter element within this svg fragment.	value
+xlink:href	FontFaceUriElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference for the location of a font.	value
+xlink:href	GlyphRefElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to a glyph element in this svg fragment..	value
+xlink:href	HrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to the animations target element.	value
+xlink:href	ImageElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to a source image.	value
+xlink:href	LinearGradientElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to a linearGradient element.	value
+xlink:href	MPathElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to the path element that is used the path motion for animateMotion.	value
+xlink:href	PatternElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to another pattern element residing in the current fragment.	value
+xlink:href	RadialGradientElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to a another radialGradient element residing in the same fragment.	value
+xlink:href	ScriptElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to  the scripting code.	value
+xlink:href	TRefElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to chararcter data for this tref..	value
+xlink:href	TextPathElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to path element which defines the path along which the text will be rendered.	value
+xlink:href	UseElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to an element within this fragment to be used.	value
+xlink:href	feImageElementHrefAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference to a source image of the feImage element.	value
+xlink:role	XLinkRoleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets an IRI reference that identifies some resource that describes the intended property.	value
+xlink:show	XLinkShowAttribute	5	TRUE	FALSE	FALSE	FALSE		Sets the display context in which target is intended to be placed, This applies only to Xlink aware processors.	oneOf
+xlink:title	XLinkTitleAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a textual description which is intended to convey the meaning of this link.	value
+xlink:type	XLinkTypeAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the type of link being used.	value
+xml:base	XMLBaseAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets a base IRI that may differ from the the current base IRI.	value
+xml:lang	XMLLangAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the language (such as, English) to be used.	value
+xml:space	XMLSpaceAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether or not white space is preserved in character data.	either
+y	AltGlyphElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinates for the alternative glyphs..	coordinateVector
+y	CursorElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the cursor point, this coordinate being interpreted using the cursors coordinate system.	coordinate
+y	FilterElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the top side of the filter effects region.	coordinate
+y	FilterPrimitiveYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the filter primitive subregion. The processing of a filter primitive is restricted to the filter primitive subregion.	coordinate
+y	ForeignObjectElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coord of the top side of rectangular region into which the referenced document is placed.	coordinate
+y	GlyphRefElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinates for the alternative glyphs..	value
+y	ImageElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets y-coordinate of the top side of the rectangular region where the image is to be placed.	coordinate
+y	MaskElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets y coordinate of the top-side of the rectangular region defining the largest possible offscreen buffer.	coordinate
+y	PatternElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate (top) of the tile of the pattern element.	coordinate
+y	RectElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the top of the rectangle.	coordinate
+y	SVGElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets y-coordinate of the top side of an embedded svg.	coordinate
+y	TSpanElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Set tspan y-coordinate(s).	coordinateVector
+y	TextElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Set text y-coordinate(s).	coordinateVector
+y	UseElementYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the top edge of the region where an element referenced by use is to be placed.	coordinate
+y	fePointLightYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the point light source.	value
+y	feSpotLightYAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the spot light source.	value
+y1	LineElementY1Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the first point of the line	coordinate
+y1	LinearGradientElementY1Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the starting point for a linear gradient.	coordinate
+y2	LineElementY2Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the second point of the line	coordinate
+y2	LinearGradientElementY2Attribute	1	FALSE	FALSE	FALSE	FALSE		Sets the y-coordinate of the ending point for a linear gradient.	coordinate
+yChannelSelector	feDisplacementMapYChannelSelectorAttribute	1	FALSE	FALSE	FALSE	FALSE		Governs which channel (R|G|B|A) of the image given by in2 to be used for the computing the amount of displacement of of the image given by in1 in the y direction.	value
+z	fePointLightZAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the z-coordinate of the point light source.	value
+z	feSpotLightZAttribute	1	FALSE	FALSE	FALSE	FALSE		Sets the z-coordinate of the spot light source.	value
+zoomAndPan	ZoomAndPanAttribute	2	TRUE	FALSE	FALSE	FALSE		Governs whether or not the outermost svg can zoom and pan.	either

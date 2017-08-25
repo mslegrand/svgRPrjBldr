@@ -1,0 +1,330 @@
+loc	anim	val	additive	animate	set	animateColor	animateTransform
+FontFaceElementAccentHeightAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementAlphabeticAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementArabicFormAttribute	FALSE	initial | medial | terminal | isolated	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementAscentAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementBboxAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementCapHeightAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementDAttribute	FALSE	path data	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementDescentAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementFontFamilyAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementFontSizeAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementFontStretchAttribute	FALSE	all | [ normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded] [, [ normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded] ]*	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementFontStyleAttribute	FALSE	all | [ normal | italic | oblique] [, [normal | italic | oblique]]*	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementFontVariantAttribute	FALSE	[normal | small-caps] [,[normal | small-caps]]*	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementFontWeightAttribute	FALSE	all | [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900] [, [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900]]*	FALSE	FALSE	FALSE	FALSE	FALSE
+HKernElementG1Attribute	FALSE	<name> [, <name> ]*	FALSE	FALSE	FALSE	FALSE	FALSE
+HKernElementG2Attribute	FALSE	<name> [, <name> ]*	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementGlyphNameAttribute	FALSE	<name> [, <name> ]*	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementHangingAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontElementHorizAdvXAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementHorizAdvXAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontElementHorizOriginXAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontElementHorizOriginYAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementIdeographicAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+HKernElementKAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementLangAttribute	FALSE	%LanguageCodes;	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementMathematicalAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceNameElementNameAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementOrientationAttribute	FALSE	h | v	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementOverlinePositionAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementOverlineThicknessAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementPanose1Attribute	FALSE	[<integer>]{10}	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementSlopeAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementStemhAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementStemvAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementStrikeThroughPositionAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementStrikeThroughThicknessAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceFormatElementStringAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+HKernElementU1Attribute	FALSE	[<character> | <urange> ] [, [<character> | <urange>] ]*	FALSE	FALSE	FALSE	FALSE	FALSE
+HKernElementU2Attribute	FALSE	[<character> | <urange>] [, [<character> | <urange>] ]*	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementUnderlinePositionAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementUnderlineThicknessAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementUnicodeAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementUnicodeRangeAttribute	FALSE	<urange> [, <urange>]*	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementUnitsPerEmAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementVertAlphabeticAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementVertHangingAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementVertIdeographicAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementVertMathematicalAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontElementVertAdvYAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementVertAdvYAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontElementVertOriginXAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementVertOriginXAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontElementVertOriginYAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphElementVertOriginYAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementWidthsAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceElementXHeightAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+FontFaceUriElementHrefAttribute	FALSE	<IRI>	FALSE	FALSE	FALSE	FALSE	FALSE
+AccumulateAttribute	FALSE	"""""none | sum"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+AdditiveAttribute	FALSE	"""""replace | sum"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+AttributeNameAttribute	FALSE	<attributeName>	FALSE	FALSE	FALSE	FALSE	FALSE
+AttributeTypeAttribute	FALSE	CSS | XML | auto	FALSE	FALSE	FALSE	FALSE	FALSE
+BeginAttribute	FALSE	begin-value-list	FALSE	FALSE	FALSE	FALSE	FALSE
+ByAttribute	FALSE	"""""<value>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+CalcModeAttribute	FALSE	"""""discrete | linear | paced | spline"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+DurAttribute	FALSE	"Clock-value | """"media"""" | """"indefinite"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+EndAttribute	FALSE	end-value-list	FALSE	FALSE	FALSE	FALSE	FALSE
+FillAttribute	FALSE	"""""freeze"""" | """"remove"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+FromAttribute	FALSE	"""""<value>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+KeyPointsAttribute	FALSE	<list-of-numbers>	FALSE	FALSE	FALSE	FALSE	FALSE
+KeySplinesAttribute	FALSE	"""""<list>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+KeyTimesAttribute	FALSE	"""""<list>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+MaxAttribute	FALSE	"Clock-value | """"media"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+MinAttribute	FALSE	"Clock-value | """"media"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+OriginAttribute	FALSE	default	FALSE	FALSE	FALSE	FALSE	FALSE
+PathAttribute	FALSE	<path-data>	FALSE	FALSE	FALSE	FALSE	FALSE
+RepeatCountAttribute	FALSE	"numeric value | """"indefinite"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+RepeatDurAttribute	FALSE	"Clock-value | """"indefinite"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+RestartAttribute	FALSE	"""""always"""" | """"whenNotActive"""" | """"never"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+RotateAttribute	FALSE	<number> | auto | auto-reverse	FALSE	FALSE	FALSE	FALSE	FALSE
+SetElementToAttribute	FALSE	<value>	FALSE	FALSE	FALSE	FALSE	FALSE
+ToAttribute	FALSE	"""""<value>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+AnimateTransformElementTypeAttribute	FALSE	translate | scale | rotate | skewX | skewY	FALSE	FALSE	FALSE	FALSE	FALSE
+ValuesAttribute	FALSE	"""""<list>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+MPathElementHrefAttribute	FALSE	<iri>	FALSE	FALSE	FALSE	FALSE	FALSE
+HrefAttribute	FALSE	<iri>	FALSE	FALSE	FALSE	FALSE	FALSE
+feComponentTransferAmplitudeAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feDistantLightAzimuthAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feTurbulenceBaseFrequencyAttribute	TRUE	<number>					
+feConvolveMatrixElementBiasAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feDiffuseLightingDiffuseConstantAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feConvolveMatrixElementDivisorAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feOffsetDxAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feOffsetDyAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feConvolveMatrixElementEdgeModeAttribute	TRUE	duplicate | wrap | none					
+feDistantLightElevationAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feComponentTransferExponentAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterElementFilterResAttribute	TRUE	<number>					
+FilterElementFilterUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+FilterElementHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterPrimitiveHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterPrimitiveInAttribute	TRUE	SourceGraphic					
+feComponentTransferInterceptAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feCompositeK1Attribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feCompositeK2Attribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feCompositeK3Attribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feCompositeK4Attribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feConvolveMatrixElementKernelMatrixAttribute	TRUE	<list of numbers>					
+feConvolveMatrixElementKernelUnitLengthAttribute	TRUE	<number>					
+feDiffuseLightingKernelUnitLengthAttribute	TRUE	<number>					
+feSpecularLightingKernelUnitLengthAttribute	TRUE	<number>					
+feSpotLightLimitingConeAngleAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feBlendModeAttribute	TRUE	" """"normal | multiply | screen | darken | lighten"""""					
+feTurbulenceNumOctavesAttribute	TRUE	<integer>	TRUE	TRUE	TRUE	FALSE	FALSE
+feComponentTransferOffsetAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feCompositeOperatorAttribute	TRUE	" """"over | in | out | atop | xor | arithmetic"""""					
+feMorphologyOperatorAttribute	TRUE	" """"erode | dilate"""""					
+feConvolveMatrixElementOrderAttribute	TRUE	<number>					
+feSpotLightPointsAtXAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpotLightPointsAtYAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpotLightPointsAtZAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feConvolveMatrixElementPreserveAlphaAttribute	TRUE	false | true					
+FilterElementPrimitiveUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+feMorphologyRadiusAttribute	TRUE	<number>					
+FilterPrimitiveResultAttribute	TRUE	" """"<filter-primitive-reference>"""""					
+feDisplacementMapScaleAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feTurbulenceSeedAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feComponentTransferSlopeAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpecularLightingSpecularConstantAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpecularLightingSpecularExponentAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpotLightSpecularExponentAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feGaussianBlurStdDeviationAttribute	TRUE	<number>					
+feTurbulenceStitchTilesAttribute	TRUE	" """"stitch | noStitch"""""					
+feDiffuseLightingSurfaceScaleAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpecularLightingSurfaceScaleAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feComponentTransferTableValuesAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feConvolveMatrixElementTargetXAttribute	TRUE	<integer>	TRUE	TRUE	TRUE	FALSE	FALSE
+feConvolveMatrixElementTargetYAttribute	TRUE	<integer>	TRUE	TRUE	TRUE	FALSE	FALSE
+feColorMatrixTypeAttribute	TRUE	" """"matrix | saturate | hueRotate | luminanceToAlpha"""""					
+feTurbulenceTypeAttribute	TRUE	" """"fractalNoise | turbulence"""""					
+feComponentTransferTypeAttribute	TRUE	" """"identity | table | discrete | linear | gamma"""""					
+feColorMatrixValuesAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterElementWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterPrimitiveWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+fePointLightXAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpotLightXAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterPrimitiveXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+feDisplacementMapXChannelSelectorAttribute	TRUE	" """"R | G | B | A"""""					
+feImageElementHrefAttribute	TRUE	<iri>	FALSE	TRUE	TRUE	FALSE	FALSE
+FilterElementHrefAttribute	TRUE	<iri>	FALSE	TRUE	TRUE	FALSE	FALSE
+fePointLightYAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpotLightYAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+FilterPrimitiveYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+feDisplacementMapYChannelSelectorAttribute	TRUE	" """"R | G | B | A"""""					
+fePointLightZAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+feSpotLightZAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+SVGElementBaseProfileAttribute	FALSE	profile-name	FALSE	FALSE	FALSE	FALSE	FALSE
+ExternalResourcesRequiredAttribute	FALSE	false | true	FALSE	FALSE	FALSE	FALSE	FALSE
+ImageElementHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+SVGElementHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+UseElementHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+IDAttribute	FALSE	name	FALSE	FALSE	FALSE	FALSE	FALSE
+RequiredExtensionsAttribute	FALSE	list-of-extensions	FALSE	FALSE	FALSE	FALSE	FALSE
+RequiredFeaturesAttribute	FALSE	list-of-features	FALSE	FALSE	FALSE	FALSE	FALSE
+SystemLanguageAttribute	FALSE	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	FALSE	FALSE	FALSE	FALSE	FALSE
+SVGElementVersionAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+ImageElementWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+SVGElementWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+UseElementWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+ImageElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+SVGElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+UseElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+ImageElementHrefAttribute	TRUE	<iri>	FALSE	TRUE	TRUE	FALSE	FALSE
+UseElementHrefAttribute	TRUE	<iri>	FALSE	TRUE	TRUE	FALSE	FALSE
+XMLBaseAttribute	FALSE	<iri>	FALSE	FALSE	FALSE	FALSE	FALSE
+XMLLangAttribute	FALSE	languageID	FALSE	FALSE	FALSE	FALSE	FALSE
+XMLSpaceAttribute	FALSE	{default | preserve}	FALSE	FALSE	FALSE	FALSE	FALSE
+ImageElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+SVGElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+UseElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+ClassAttribute	TRUE	6.11 The ΓÇýclassΓÇÖ attribute					
+ContentStyleTypeAttribute	FALSE	content-type	FALSE	FALSE	FALSE	FALSE	FALSE
+StyleElementMediaAttribute	FALSE	media-descriptors	FALSE	FALSE	FALSE	FALSE	FALSE
+StyleAttribute	FALSE	6.12 The ΓÇýstyleΓÇÖ attribute	FALSE	FALSE	FALSE	FALSE	FALSE
+StyleElementTitleAttribute	FALSE	advisory-title	FALSE	FALSE	FALSE	FALSE	FALSE
+StyleElementTypeAttribute	FALSE	content-type	FALSE	FALSE	FALSE	FALSE	FALSE
+ClipPathElementClipPathUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+MaskElementHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+MaskElementMaskContentUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+MaskElementMaskUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+MaskElementWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+MaskElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+MaskElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+ContentScriptTypeAttribute	FALSE	content-type	FALSE	FALSE	FALSE	FALSE	FALSE
+OnAbortEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnActivateEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnBeginEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnClickEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnEndEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnErrorEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnFocusInEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnFocusOutEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnLoadEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnMouseDownEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnMouseMoveEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnMouseOutEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnMouseOverEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnMouseUpEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnRepeatEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnResizeEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnScrollEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnUnloadEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+OnZoomEventAttribute	FALSE	<anything>	FALSE	FALSE	FALSE	FALSE	FALSE
+ScriptElementTypeAttribute	FALSE	content-type	FALSE	FALSE	FALSE	FALSE	FALSE
+ScriptElementHrefAttribute	FALSE	<iri>	FALSE	FALSE	FALSE	FALSE	FALSE
+CircleElementCXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+EllipseElementCXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+CircleElementCYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+EllipseElementCYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+RectElementHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+PolygonElementPointsAttribute	TRUE	<list-of-points>	FALSE	TRUE	TRUE	FALSE	FALSE
+PolylineElementPointsAttribute	TRUE	<list-of-points>	FALSE	TRUE	TRUE	FALSE	FALSE
+CircleElementRAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+EllipseElementRXAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+RectElementRXAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+EllipseElementRYAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+RectElementRYAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+RectElementWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+RectElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LineElementX1Attribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LineElementX2Attribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+RectElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LineElementY1Attribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LineElementY2Attribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+RadialGradientElementCXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+RadialGradientElementCYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+RadialGradientElementFXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+RadialGradientElementFYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LinearGradientElementGradientTransformAttribute	TRUE	<transform-list>	TRUE	FALSE	FALSE	FALSE	TRUE
+RadialGradientElementGradientTransformAttribute	TRUE	<transform-list>	TRUE	FALSE	FALSE	FALSE	TRUE
+LinearGradientElementGradientUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+RadialGradientElementGradientUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+PatternElementHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+StopElementOffsetAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+PatternElementPatternContentUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+PatternElementPatternTransformAttribute	TRUE	<transform-list>	TRUE	FALSE	FALSE	FALSE	TRUE
+PatternElementPatternUnitsAttribute	TRUE	" """"userSpaceOnUse | objectBoundingBox"""""					
+RadialGradientElementRAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+LinearGradientElementSpreadMethodAttribute	TRUE	" """"pad | reflect | repeat"""""					
+RadialGradientElementSpreadMethodAttribute	TRUE	" """"pad | reflect | repeat"""""					
+PatternElementWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+PatternElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LinearGradientElementX1Attribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LinearGradientElementX2Attribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LinearGradientElementHrefAttribute	TRUE	<iri>	FALSE	TRUE	TRUE	FALSE	FALSE
+PatternElementHrefAttribute	TRUE	<iri>	FALSE	TRUE	TRUE	FALSE	FALSE
+RadialGradientElementHrefAttribute	TRUE	<iri>	FALSE	TRUE	TRUE	FALSE	FALSE
+PatternElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LinearGradientElementY1Attribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+LinearGradientElementY2Attribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+DAttribute	TRUE	" """"path data"""""					
+PathLengthAttribute	TRUE	<number>	TRUE	TRUE	TRUE	FALSE	FALSE
+AltGlyphElementDXAttribute	TRUE	<list-of-lengths>	FALSE	TRUE	TRUE	FALSE	FALSE
+GlyphRefElementDXAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+TextElementDXAttribute	TRUE	<list-of-lengths>	FALSE	TRUE	TRUE	FALSE	FALSE
+TSpanElementDXAttribute	TRUE	<list-of-lengths>	FALSE	TRUE	TRUE	FALSE	FALSE
+AltGlyphElementDYAttribute	TRUE	<list-of-lengths>	FALSE	TRUE	TRUE	FALSE	FALSE
+GlyphRefElementDYAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+TextElementDYAttribute	TRUE	<list-of-lengths>	FALSE	TRUE	TRUE	FALSE	FALSE
+TSpanElementDYAttribute	TRUE	<list-of-lengths>	FALSE	TRUE	TRUE	FALSE	FALSE
+AltGlyphElementFormatAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphRefElementFormatAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+AltGlyphElementGlyphRefAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphRefElementGlyphRefAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+TextElementLengthAdjustAttribute	TRUE	spacing|spacingAndGlyphs					
+TextPathElementMethodAttribute	TRUE	" """"align | stretch"""""					
+AltGlyphElementRotateAttribute	TRUE	<list-of-numbers>	FALSE	TRUE	TRUE	FALSE	FALSE
+TextElementRotateAttribute	TRUE	<list-of-numbers>	FALSE	TRUE	TRUE	FALSE	FALSE
+TSpanElementRotateAttribute	TRUE	<list-of-numbers>	FALSE	TRUE	TRUE	FALSE	FALSE
+TextPathElementSpacingAttribute	TRUE	" """"auto | exact"""""					
+TextPathElementStartOffsetAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+TextElementTextLengthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+TSpanElementTextLengthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+AltGlyphElementXAttribute	TRUE	<list-of-coordinates>	FALSE	TRUE	TRUE	FALSE	FALSE
+GlyphRefElementXAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+TextElementXAttribute	TRUE	<list-of-coordinates>	FALSE	TRUE	TRUE	FALSE	FALSE
+TSpanElementXAttribute	TRUE	<list-of-coordinates>	FALSE	TRUE	TRUE	FALSE	FALSE
+AltGlyphElementHrefAttribute	FALSE	<iri>	FALSE	FALSE	FALSE	FALSE	FALSE
+GlyphRefElementHrefAttribute	FALSE	<iri>	FALSE	FALSE	FALSE	FALSE	FALSE
+TextPathElementHrefAttribute	TRUE	<iri>					
+TRefElementHrefAttribute	TRUE	<iri>	FALSE	TRUE	TRUE	FALSE	FALSE
+AltGlyphElementYAttribute	TRUE	<list-of-coordinates>	FALSE	TRUE	TRUE	FALSE	FALSE
+GlyphRefElementYAttribute	FALSE	<number>	FALSE	FALSE	FALSE	FALSE	FALSE
+TextElementYAttribute	TRUE	<list-of-coordinates>	FALSE	TRUE	TRUE	FALSE	FALSE
+TSpanElementYAttribute	TRUE	<list-of-coordinates>	FALSE	TRUE	TRUE	FALSE	FALSE
+ForeignObjectElementHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+ForeignObjectElementWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+ForeignObjectElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+ForeignObjectElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+ColorProfileElementLocalAttribute	FALSE	<string>	FALSE	FALSE	FALSE	FALSE	FALSE
+ColorProfileElementNameAttribute	FALSE	<name>	FALSE	FALSE	FALSE	FALSE	FALSE
+ColorProfileElementRenderingIntentAttribute	FALSE	auto | perceptual | relative-colorimetric | saturation | absolute-colorimetric	FALSE	FALSE	FALSE	FALSE	FALSE
+ColorProfileElementHrefAttribute	FALSE	<iri>	FALSE	FALSE	FALSE	FALSE	FALSE
+MarkerHeightAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+MarkerUnitsAttribute	TRUE	strokeWidth | userSpaceOnUse					
+MarkerWidthAttribute	TRUE	<length>	TRUE	TRUE	TRUE	FALSE	FALSE
+OrientAttribute	TRUE	auto | <angle>					
+MarkerElementRefXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+MarkerElementRefYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+PreserveAspectRatioAttribute	TRUE	7.8 The ΓÇýpreserveAspectRatioΓÇÖ attribute					
+TransformAttribute	TRUE	7.6 The ΓÇýtransformΓÇÖ attribute					
+ViewBoxAttribute	TRUE	7.7 The ΓÇýviewBoxΓÇÖ attribute					
+AElementTargetAttribute	TRUE	_replace					
+ViewElementViewTargetAttribute	FALSE	" """"XML_Name [XML_NAME]*"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+AElementXLinkActuateAttribute	FALSE	"""""onRequest"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+XLinkActuateAttribute	FALSE	" """"onLoad'"	FALSE	FALSE	FALSE	FALSE	FALSE
+XLinkArcRoleAttribute	FALSE	" """"<IRI>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+AElementXLinkHrefAttribute	TRUE	<iri>					
+XLinkRoleAttribute	FALSE	" """"<IRI>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+XLinkShowAttribute	FALSE	" """"new' | 'replace' | 'embed' | 'other' | 'none'"	FALSE	FALSE	FALSE	FALSE	FALSE
+XLinkTitleAttribute	FALSE	" """"<anything>"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+XLinkTypeAttribute	FALSE	" """"simple"""""	FALSE	FALSE	FALSE	FALSE	FALSE
+CursorElementXAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+CursorElementHrefAttribute	TRUE	<funciri>					
+CursorElementYAttribute	TRUE	<coordinate>	TRUE	TRUE	TRUE	FALSE	FALSE
+ZoomAndPanAttribute	FALSE	Magnification represents a complete, uniform transformation on an SVG document fragment, where the magnify operation scales all graphical elements by the same amount. A magnify operation has the effect of a supplemental scale and translate transformation placed at the outermost level on the SVG document fragment (i.e., outside the outermost svg element).	FALSE	FALSE	FALSE	FALSE	FALSE
+FilterPrimitiveIn1Attribute	TRUE	SourceGraphic | SourceAlpha | BackgroundImage | BackgroundAlpha | FillPaint | StrokePaint | <filter-primitive-reference>					
+FilterPrimitiveIn2Attribute	TRUE	SourceGraphic | SourceAlpha | BackgroundImage | BackgroundAlpha | FillPaint | StrokePaint | <filter-primitive-reference>					

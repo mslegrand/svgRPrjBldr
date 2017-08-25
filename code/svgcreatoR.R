@@ -6,7 +6,8 @@ setwd(tmp)
 #---------------------------
 
 library(data.table)
-if(!exists("requireTable")){ source("../tableLoader.R") }
+if(!exists("requireTable")){ source("tableLoader.R") }
+
 source("./code/specialTagHandlers.R")
 
 #notess to self
@@ -41,7 +42,7 @@ build.svgFnQ<-function(){
     fill=c("g",PA.DT[attr=='fill' & variable=='Applies to']$value),
     clip.path=c("g",PA.DT[attr=='clip-path' & variable=='Applies to']$value),
     mask=c("g",PA.DT[attr=='mask' & variable=='Applies to']$value),
-    marker=c("g",PA.DT[attr=="marker properties" & variable=='Applies to']$value)
+    marker=c("g",unique(PA.DT[attr %like% "marker" & variable=='Applies to', value]))
   )
   
   # build list of all combos for potential animation
@@ -78,13 +79,13 @@ build.svgFnQ<-function(){
     ele.dt[, paste(attr, collapse=" "), by=treatValueAs]->treat_attrs.dt
     
     #helper fn
-    animateComboParam<-function(ele.tag){
-      if(ele.tag %in% c("set","animate")){
-        body0<-append(body0, makeAni(ele.tag, aaCombos) ,2)
-      } else {
-        NULL
-      }
-    }
+    # animateComboParam<-function(ele.tag){
+    #   if(ele.tag %in% c("set","animate")){
+    #     body0<-append(body0, makeAni(ele.tag, aaCombos) ,2)
+    #   } else {
+    #     NULL
+    #   }
+    # }
     
     #helper fn
     insertConditionalCode<-function(ele.tag, ele.tag.set, fn, ...){

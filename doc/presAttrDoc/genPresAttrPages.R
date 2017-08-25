@@ -14,9 +14,18 @@ if(!exists("validateString")){
 #PA.DT supplies Attributes, ElementsAppliedTo, Animatable, Initial, Inherited, Percentages
 #PAD.DT for descriptions
 requireTable(PAD.DT, PA.DT)
+requireTable(PAV.DT)
+
+PAV.DT[type=='LITERAL',val:=paste0("\\emph{'",val,"'}")]
+
+PAV2.DT<-PAV.DT[,list(val=list(val),val.def=list(val.def)), by='attr']
+
+
+PA.DT<-merge(PA.DT,PAV2.DT, by='attr')
 
 att2Elements.DT<-
   PA.DT[variable=="Applies to", list(elements=list(value)), by="attr"]
+
 
 
 cat2el.DT<-rbind(
@@ -43,46 +52,51 @@ genPresAttrPages<-function(){
     elements<- expand.pres.Cat( elements)
     #next split into categoryies
     elementsListing<-els2Cats(elements)
-    # elements.DT<-data.table(element=elements, loc=elements)
-    # 
-    # elements.DT<-merge(elements.DT,el2CatLookup.DT, by="element")
-    #  
-    # if(nrow(elements.DT)>0){
-    #   elements.DT[,linkTo:=nameWithLink(element)]
-    #   elements.DT<-elements.DT[,.(element,linkTo),by=category] #group by category
-    #   elements.DT<-elements.DT[, 
-    #                            rd.item(
-    #                              rd.emph(category), paste0(linkTo ,collapse=", ")
-    #                            ),
-    #                            by=category 
-    #                            ]
-    #   elementsListing<-elements.DT$V1
-    # } else {
-    #   elementsListing<-"{Not Currently Used}{!}"
-    #   cat("Error in genPresAttrPages.R")
-    # }
-    # 
-    
+
     Animatable  <-PA.DT[attr==  attribute & variable=="Animatable"]$value 
     Initial     <-PA.DT[attr==  attribute & variable=="Initial"]$value
     Inherited   <-PA.DT[attr==  attribute & variable=="Inherited"]$value
-    values      <-PA.DT[attr==  attribute & variable=="Value"]$value
-    Percentages <-PA.DT[attr==  attribute & variable=="Percentages"]$value
+    #values      <-PA.DT[attr==  attribute & variable=="Value"]$value
+    values      <-unlist(PAV2.DT[attr==  attribute,val ])
+    val.def     <-unlist(PAV2.DT[attr==  attribute, val.def])
+  
+    val.def[val.def==""]<-'todo'
+    val.def<-stars2rds(val.def)
+    val.def<-dollars2Eqns(val.def)
+    
+    # val.def<-gsub("\\*\\*([^\\$]+)\\*\\*", "\\\\strong\\{\\1\\}", val.def, perl=TRUE)
+    # val.def<-gsub("\\*([^\\$]+)\\*", "\\\\emph\\{\\1\\}", val.def, perl=TRUE)
     
     #handle the description part
     description  <-PAD.DT[attr==attribute]$descript
+    
+    if(length(description)==0 || nchar(description)==0){
+      print(paste(attribute, "Missing description"))
+      description<-"Todo"
+    }
     description<-validateString(description,"PresAttrPg description")
-    if(is.null(description)){description<-"To do"}
-    valDes<-"**ToDo!!!** "
+    
+    
+    
+    # valDes<-"**ToDo!!!** "
     #title<-gsub("[-:]", ".", attribute) 
     presAttrLoc<-getPresAttrsLoc(attribute)
     # AppliesTo.elements<-paste("\\code{\\link{", AppliesTo.elements, "}}", sep="", collapse=", ")
+    alink<-getPresAttrsLoc(attribute)
     txt<-c(
       rd.name(presAttrLoc),
       rd.title(asDot(attribute)),
       rd.description(description),
-      rd.section("Available Attribute Values"),     
-      rd.itemize( rd.item(values, valDes)),
+      rd.section("Available Attribute Values"),
+      if(length(values)>0){
+        c(rd.section("Available Attribute Values"),     
+          rd.describe( rd.item(values,val.def) ) )
+      } else {
+        cat("WARNING",alink, ": missing attribute values\n")
+        NULL
+      },
+      loc2animDescription(alink),
+      #rd.itemize( rd.item(values, val.def)),
       rd.section("Used by the Elements"),
       rd.describe( elementsListing ),
       rd.keywords("internal")
@@ -92,8 +106,12 @@ genPresAttrPages<-function(){
   }
   
   #attrs<-unique(PA.DT[variable=="Applies to"]$attr)
-  attrs<-att2Elements.DT[,attr]
+  attrs<-att2Elements.DT[,attr] 
+  # attrs is presentaion attributes not list as regular
+  # That is, we omit "font", "stroke-width", "marker-start", "marker-mid",   "marker-end",  "marker" 
   attrDefsPages.List<-lapply( attrs, addAttributeEntry)  
   rtv<-paste(attrDefsPages.List, collapse="\n")
   rtv 
 }
+
+genPresAttrPages()

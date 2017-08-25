@@ -1,4 +1,17 @@
 # common doc building operations
+library(stringr)
+
+requireTable(ANIM.DT)
+
+stars2rds<-function(txt){
+  txt<-gsub("\\*\\*([^\\*]+)\\*\\*", "\\\\strong\\{\\1\\}", txt, perl=TRUE)
+  gsub("\\*([^\\*]+)\\*", "\\\\emph\\{\\1\\}", txt, perl=TRUE)
+}
+
+dollars2Eqns<-function(name){
+  name<-gsub("\\$\\$([^\\$]+)\\$\\$", "\\\\deqn\\{\\1\\}", name, perl=TRUE)
+  gsub("\\$([^\\$]+)\\$", "\\\\eqn\\{\\1\\}", name, perl=TRUE)
+}
 
 #used by rd.item
 capitalizeIt<-function(name){
@@ -16,6 +29,37 @@ getPresAttrsLoc<-function(presAttrs){ #USED in genPresAttrPages; ele2PresAttrs (
   #gsub("[-:]",".",presAttrs)->presAttrs #remove the uglies
   presAttrsLoc<-paste0(presAttrs,"-presentationAttribute")
   presAttrsLoc
+}
+
+
+
+loc2animDescription<-function(alink){
+  tmp.DT<-ANIM.DT[loc==alink]
+  if(nrow(tmp.DT)!=1){
+    rtv<-NULL #maybe we should throw here?
+  } else if( tmp.DT$anim[1]==FALSE ){
+    print(alink)
+    rtv<-c(
+      rd.section("Animatable"),
+      "Not Animatable"
+    )
+  } else if  (is.na(tmp.DT$additive)) {
+    rtv<-NULL
+  } else {
+    ad<-tmp.DT$additive
+    yn<-ifelse(ad,"Yes","No")
+    a<-c(tmp.DT[1,animate],tmp.DT[1,set],tmp.DT[1,animateColor], tmp.DT[1,animateTransform])
+    aa<-c("animate","set","animateColor","animateTransform")[a==TRUE]
+    aa<-sapply(aa, nameWithLink) 
+    aa<-paste(aa,collapse=", ")
+    rtv<-c(
+      rd.section("Animatable"),
+      #rd.describe( aa ) ,
+      paste("Using: ", aa, "."),
+      paste("Supports Additive:", yn, ".")
+    )
+  }
+  rtv
 }
 
 

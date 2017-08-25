@@ -11,22 +11,28 @@ tablesSrc=list(
   PA.DT="./dataTables/PA.csv", #"./dataTables/presentationAttr.tsv",
   COP.DT="./dataTables/COP.csv",
   COP1.DT="./dataTables/COP1.csv",
-  AET.DT="./dataTables/AETTable.tsv",
-  PI.DT="./dataTables/propIndex.tsv", #only here
+  AET.DT="./dataTables/AETTable.tsv", # svgcreatoR
+  
   PAD.DT="./dataTables/PADescription3.csv",
-  RAD.DT="./dataTables/regAttrDescription.csv", # only here
+  
   ED.DT="./dataTables/ED4.csv", #"./dataTables/elementDescription.csv",
   CEL.DT="./dataTables/catEleLookUp.csv",
-  SPA.DT="./dataTables/specParams.csv", # only here (or makeAdjunctiveTable)
-  SPACXY.DT="./dataTables/specParamsCXY.tsv", #only here
-  COAttrD.DT="./dataTables/COAttrD.csv", # appears to not be used
-  EL2CAT.DT="./dataTables/catEleLookUp.csv",
-  ADJ.DT="./dataTables/adjCO.csv", #only here!
+  
+  
+  COAttrD.DT="./dataTables/COAttrD.csv", # getCOAttrPages.R
+  EL2CAT.DT="./dataTables/catEleLookUp.csv", #ele2Cats.R
+  
   PAV.DT="./dataTables/PAV_EDITED12.csv", 
   RAF.DT="./dataTables/RAF18.csv",
   PROLOG.DT="./dataTables/PROLOG6.csv",
   EPILOG.DT="./dataTables/epilog5.csv",
-  ANC.DT="./dataTables/Ancillary10.csv"
+  ANC.DT="./dataTables/Ancillary10.csv" #,
+  
+  # ADJ.DT="./dataTables/adjCO.csv", #only here!
+  # PI.DT="./dataTables/propIndex.tsv", #only here
+  # RAD.DT="./dataTables/regAttrDescription.csv", # only here
+  # SPA.DT="./dataTables/specParams.csv", # only here (or makeAdjunctiveTable)
+  # SPACXY.DT="./dataTables/specParamsCXY.tsv", #only here
 )
 
 #temporary kludge for keeping epilog current

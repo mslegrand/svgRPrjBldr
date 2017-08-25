@@ -1,4 +1,5 @@
 requireTable(COP.DT)
+requireTable(AVEL.DT)
 
 ele2COAttrs<-function(elName){
   #-----combo attributes
@@ -9,17 +10,18 @@ ele2COAttrs<-function(elName){
       sub(pattern, variable, loc[i], ignore.case=T)    
     })   
   }
-  
+  COP.DT[value=="in",value:="in1"]
   AL.DT<- AVEL.DT[element==elName, list(loc), key=attr] #attr loc
   # 1. get the combined attrs from COP.DT
-  COP.DT[element==elName, .SD[1,], by=variable]->tmp1.DT      
+  COP.DT[element==elName, .SD[1,], by=variable]->tmp1.DT 
+  #tmp1.DT[value=='in',value:='in1'] #kludge to convert for COP.DT, since it uses in instead of in1
   # 2. extract from AL.DT, the locations and form CAL.COP.DT for combined
   if(nrow(tmp1.DT)>0){
     setkey(tmp1.DT,value)
     #In one step :)
     CAL.COP.DT<-AL.DT[tmp1.DT,
       list(
-      category='combining attributes', 
+      category='complementary attributes',
       attr=variable, 
       loc=co.loc2(attr, loc, variable)
       )

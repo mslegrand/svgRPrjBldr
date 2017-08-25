@@ -1,7 +1,6 @@
 if(!exists("rd.name")){
   source("tableLoader.R")
   source("./doc/helpers/commonDoc.R")
- 
 }
 if(!exists("els2Cats")){
   source("./doc/helpers/els2Cats.R")
@@ -12,11 +11,14 @@ if(!exists("validateString")){
 
 #--------Combo Attribute Pages----------------------
 requireTable(AVEL.DT, COP.DT, COAttrD.DT)
+requireTable(AVEL.DT, ANC.DT)
 # COP.DT is from comboParams.tsv 
 
+#COAttrD.DT[attr=="in1", loc:=gsub("IN1","In",loc)]
 
 genCOAttrPages<-function(){
   #helper fn
+  
   co.loc2<-function(attr,loc, variable){
     sapply(1:length(attr), function(i){
       pattern<-paste0(attr[i],"Attribute$")
@@ -31,7 +33,9 @@ genCOAttrPages<-function(){
   
   #1. get the COLCL.DT data
   AL.DT<- AVEL.DT[, .(element, attr, loc)]
+  #AL.DT[attr=="in1",attr:="in"]
   
+  COP.DT[value=='in',value:='in1']
   setkey(COP.DT,element,value) # COP is element, variable, value, where variable=xy, value=x
   setkey(AL.DT,element,attr)
   COCL.DT<-
@@ -73,30 +77,10 @@ genCOAttrPages<-function(){
   
   
   addAttributeEntry<-function(alink){
-    
     # grab elements
-
     elements<-unique(COLCL.DT[loc==alink, element])
     elementsListing<-els2Cats(elements)
-    # elements.DT<-data.table(element=elements, loc=elements)
-    # elements.DT<-merge(elements.DT,el2CatLookup.DT, by="element")
-    # if(nrow(elements.DT)>0){
-    #   elements.DT[,linkTo:=nameWithLink(element)]
-    #   elements.DT<-elements.DT[,.(element,linkTo),by=category] #group by category
-    #   elements.DT<-elements.DT[, 
-    #                            rd.item(
-    #                              rd.emph(category), paste0(linkTo ,collapse=", ")
-    #                            ),
-    #                            by=category 
-    #                            ]
-    #   elementsListing<-elements.DT$V1
-    # } else {
-    #   elementsListing<-"{Not Currently Used}{!}"
-    #   cat("Error in genCOAttrPages.R")
-    # }
-    # 
-    
-    
+
     the_attr<-unique(COLCL.DT[loc==alink,attr])
     title<-the_attr
     description<-COAttrD.DT[attr==the_attr,description]
@@ -107,10 +91,6 @@ genCOAttrPages<-function(){
     description<-validateString(description,"COAttrPg description")
     if(is.null(description)){description<-"To do"}
     
-    # valueN<-paste0("value.",toupper(component))
-    # equivI<-paste0(title, "=c(",paste(valueN, collapse=","), ")")
-    # equivII<-paste(component,"=",valueN, collapse="; ")
-    # 
     txt<-c(
       rd.name(alink),
       rd.title(asDot(title)),
@@ -120,11 +100,13 @@ genCOAttrPages<-function(){
       rd.section("Equivalence"),
       rd.describe(equivalence
       ),
+      loc2animDescription(alink),
       if(!is.null(elementsListing)){
         c(rd.section("Used by the Elements"), 
         rd.describe( elementsListing ))
       } else {
         cat("Error in getCOAttrPages: empty elements")
+        cat("alink=",alink,"\n")
         NULL
       },
       rd.keywords("internal")

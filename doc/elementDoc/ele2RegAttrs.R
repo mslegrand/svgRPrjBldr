@@ -1,4 +1,4 @@
-
+requireTable(AVEL.DT, eaCS.DT)
 
 ele2RegAttrs<-function( elName ){
   #------gets the regular attributes and loc

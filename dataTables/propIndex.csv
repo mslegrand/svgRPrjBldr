@@ -20,10 +20,10 @@ fill-rule	nonzero | evenodd | inherit	nonzero	shapes and text content elements	y
 filter	<funciri> | none | inherit	none	container elements and graphics elements	no	N/A	visual	yes
 flood-color	currentColor |<color> [<icccolor>] | inherit	black	feFlood elements	no	N/A	visual	yes
 flood-opacity	<opacity-value> | inherit	1	feFlood elements	no	N/A	visual	yes
-font	[ [ font-style || font-variant || font-weight ]? font-size [ / 'line-height' ]? font-family ] | caption | icon | menu | message-box | small-caption | status-bar | inherit	see individual properties	text content elements	yes	see individual properties	visual	yes [1]
+font	[ [ font-style || font-variant || font-weight ]? font-size [ / 'line-height' ]? font-family ] | caption | icon | menu | message-box | small-caption | status-bar | inherit	see individual properties	text content elements	yes	see individual properties	visual	yes[1]
 font-family	[[ <family-name> | <generic-family> ]]* [ <family-name> | <generic-family>] | inherit	depends on user agent	text content elements	yes	N/A	visual	yes
 font-size	<absolute-size> | <relative-size> | <length> | <percentage> | inherit	medium	text content elements	yes the computed value is inherited	refer to parent element's font size	visual	yes
-font-size-adjust	<number> | none | inherit	none	text content elements	yes	N/A	visual	yes [1]
+font-size-adjust	<number> | none | inherit	none	text content elements	yes	N/A	visual	yes[1]
 font-stretch	normal | wider | narrower | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded | inherit	normal	text content elements	yes	N/A	visual	yes
 font-style	normal | italic | oblique | inherit	normal	text content elements	yes	N/A	visual	yes
 font-variant	normal | small-caps | inherit	normal	text content elements	yes	N/A	visual	yes
@@ -44,7 +44,7 @@ shape-rendering	auto | optimizeSpeed | crispEdges | geometricPrecision | inherit
 stop-color	currentColor |<color> [<icccolor>] | inherit	black	stop elements	no	N/A	visual	yes
 stop-opacity	<opacity-value> | inherit	1	stop elements	no	N/A	visual	yes
 stroke	<paint> (See Specifying paint)	none	shapes and text content elements	yes	N/A	visual	yes
-stroke-dasharray	none | <dasharray> | inherit	none	shapes and text content elements	yes	N/A	visual	yes [1]
+stroke-dasharray	none | <dasharray> | inherit	none	shapes and text content elements	yes	N/A	visual	yes[1]
 stroke-dashoffset	<percentage> | <length> | inherit	0	shapes and text content elements	yes	see prose	visual	yes
 stroke-linecap	butt | round | square | inherit	butt	shapes and text content elements	yes	N/A	visual	yes
 stroke-linejoin1	miter | round | bevel | inherit	miter	shapes and text content elements	yes	N/A	visual	yes

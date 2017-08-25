@@ -202,7 +202,7 @@ animateMotion	attr	externalResourcesRequired
 animateMotion	attr	path
 animateMotion	attr	keyPoints
 animateMotion	attr	rotate
-animateMotion	attr	origin1
+animateMotion	attr	origin
 mpath	category	Uncategorized Element
 mpath	content.model	descriptive elements:
 mpath	attr	core attributes:
