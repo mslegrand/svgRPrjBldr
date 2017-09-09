@@ -17,7 +17,7 @@ feConvolveMatrixTagQuote<-quote(
 )
 
 # special cases for fe (filter elements)
-filterElementTags<-c(
+filterPrimitive.Tags<-c(
   "feBlend", 
   "feColorMatrix",
   "feComponentTransfer",
@@ -37,11 +37,6 @@ filterElementTags<-c(
   "feTurbulence"
 )
 
-feElementsIn<-c(
-  'feConvolveMatrix','feDiffuseLighting','feOffset',
-  'feBlend','feColorMatrix','feComponentTransfer',
-  'feComposite','feDisplacementMap','feGaussianBlur',
-  'feMorphology','feSpecularLighting','feTile')
 
 # fe
 feQuote<-quote({
@@ -81,17 +76,6 @@ filterTagQuote<-quote(
     names(args)<-tmp
   }
 )
-
-defsTagQuote<-quote({
-  tmp<-names(args) 
-  indx<-which(tmp=="XdefsNode")
-  tmp[indx]<-""
-  names(args)<-tmp}
-)
-
-svgTagQuote<-quote({
-  # add unnamed defs if defs not an unnamed arg
-})
 
 
 
@@ -185,7 +169,7 @@ maskQuote<-makeSpecTr(aName="mask", aElements = "mask", aMssg="Bad mask")
 clipPathQuote<-makeSpecTr(aName="clip-path", aElements = "clipPath", aMssg="Bad clipPath parameter")
 
 
-#todo: migrate to specialTreatments
+#todo: migrate from quotes to specialTreatments list
 specialTreatments<-list(
     fill=makeSpecTr(aName="fill", aElements = c("pattern", "linearGradient", "radialGradient"), aMssg="Bad fill parameter"),
     markerEnd=makeSpecTr(aName="marker-end", aElements = "marker", aMssg="Bad marker parameter"),
@@ -229,34 +213,6 @@ specialTreatments<-list(
         }
       })
 )
-
-# makeAni<-function(etag, aaCombos){
-#   #etag is the tag element tag (animate, set)
-#   #aaCombos is all the animate combos
-#   c(
-#     substitute(combos<-aaCombos, list(aaCombos=aaCombos )),
-#     quote(attributeName<-args[["attributeName"]]),
-#     substitute(
-#       if( !is.null(attributeName) && attributeName %in% names(combos) ){
-#         attributeNames<-combos[[attributeName]]
-#         N<-length(attributeNames)
-#         tmp<-lapply( 1:N, function(i){
-#           args2<-args
-#           args2[["attributeName"]]<-attributeNames[i]
-#           tmp<-c("from","to","values")
-#           ind<-intersect(names(args),tmp)
-#           args2[ind]<-lapply(args2[ind], function(vec){
-#             j<-min(i,length(vec))
-#             vec[j]
-#           })              
-#           etag(args2)
-#         })
-#         return(tmp)    
-#       },
-#       list(etag=etag, aaCombos=aaCombos)
-#     )  
-#   )
-# }
 
 
 makeAni<-function(etag, aaCombos){
@@ -311,11 +267,6 @@ makeAni<-function(etag, aaCombos){
     )
   )
 }
-
-
-codeSeg<-list(
-
-)
 
 
 
