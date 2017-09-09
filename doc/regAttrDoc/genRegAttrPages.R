@@ -52,7 +52,7 @@ AVD.DT[,value.def:=dollars2Eqns(value.def)]
 
 EPILOG.DT[,value:=stars2rds(value)]
 EPILOG.DT[,value:=dollars2Eqns(value)]
-
+EPILOG.DT[,value:=gsub('é', 'e', value)]
 
 AVD2.DT<- AVD.DT[, .(value=list(value), value.def=list(value.def)),  by=c("loc","attr") ]
   # AVD.DT[,list(attr=unique(attr), 
