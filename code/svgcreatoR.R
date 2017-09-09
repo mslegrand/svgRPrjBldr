@@ -87,14 +87,25 @@ build.svgFnQ<-function(){
     #   }
     # }
     
+    
     #helper fn
-    insertConditionalCode<-function(ele.tag, ele.tag.set, fn, ...){
+    # insertCode4GivenTags insertCode4GivenTags
+    insertCode4GivenTags<-function(ele.tag, ele.tag.set, fn, ...){
       if(ele.tag %in% ele.tag.set){
         fn(ele.tag, ...)
       } else {
         NULL
       }     
     }
+    
+    insertOnCondition<-function(condition, fn, ...){
+      if(condition){
+        fn(ele.tag, ...)
+      } else {
+        
+      }
+    }
+    
     
     #helper fn
     echoQuote<-function(ele.tag, q){
@@ -105,35 +116,33 @@ build.svgFnQ<-function(){
     body0<-c(
       quote( args <- list(...) ),
       quote( args <- promoteUnamedLists(args) ),
-      insertConditionalCode(ele.tag,c('text' , 'textPath' , 'tspan'), insertTextNodeQuote),
-      insertConditionalCode(ele.tag,c('set', 'animate'),makeAni, aaCombos),
-      insertConditionalCode(ele.tag,'filter', echoQuote, filterTagQuote),
+      insertCode4GivenTags(ele.tag,c('text' , 'textPath' , 'tspan'), insertTextNodeQuote),
+      insertCode4GivenTags(ele.tag,c('set', 'animate'),makeAni, aaCombos),
+      insertCode4GivenTags(ele.tag,'filter', echoQuote, filterTagQuote),
       quote( attrs <- named(args) ),
-      insertConditionalCode(ele.tag,'feConvolveMatrix', echoQuote, feConvolveMatrixTagQuote)   
+      insertCode4GivenTags(ele.tag,'feConvolveMatrix', echoQuote, feConvolveMatrixTagQuote)   
     )
 
+  # body1 
   # call comboParamHandler combo params for given ele.tag
-    ppXtraCL<-list( qcomboParamsFn(ele.tag) )
-       
-    if(nrow(AET.DT[element==ele.tag & (attr=='x' | attr=='y' | attr=='width' | attr=='height') ,])==4 ){
-      ppXtraCL<-c(ppXtraCL, quote(attrs<-mapCenteredXY(attrs) ) ) # append a call
-    }
-    
   # process elements which contain attributeName as an attribute
-    if(ele.tag %in% ele.tags.attributeName){
-      ppXtraCL<-c(ppXtraCL, quote(attrs<-mapAttributeName(attrs)))
-    }
-      
-    ppXtraCL[sapply(ppXtraCL, is.null)] <- NULL #remove any nulls #?move to end????
-    body1<-ppXtraCL
+  # Insert special handling for animate element here
+ 
+    body1<-list(
+      qcomboParamsFn(ele.tag),
+      if(nrow(AET.DT[element==ele.tag & (attr=='x' | attr=='y' | attr=='width' | attr=='height') ,])==4 ){
+         quote(attrs<-mapCenteredXY(attrs) ) # append a call
+      },
+      insertCode4GivenTags(ele.tag, ele.tags.attributeName, echoQuote, quote(attrs<-mapAttributeName(attrs) ) ),
+      insertCode4GivenTags(ele.tag, "animate", echoQuote, quote(attrs<-preProcAnimate(attrs)) )
+    )
+    body1[sapply(body1, is.null)] <- NULL  
     
-    #Insert special handling for animate element here
-    if(ele.tag == "animate"){
-      body1<-c(body1, quote(attrs<-preProcAnimate(attrs) ) )
-    }
-         
+    
+  # body 2
   # add code to treat special lists, ie. comma list, space list, semicolon list ...
-  # This becomes body2
+  # add quotes for special handling
+    
     split(treat_attrs.dt, rownames(treat_attrs.dt))->tmp # (convert rows of treat_attrs.dt table to list)  
     preprocAttrValueFn<-function(tvaAttr){
       c(
@@ -143,23 +152,29 @@ build.svgFnQ<-function(){
     } 
     body2<-lapply(tmp, function(tvaAttr){preprocAttrValueFn(tvaAttr)}) 
     unlist(body2, use.names=F)->body2
-    as.list(body2)->body2
+    #as.list(body2)->body2
 
-# **  This is necessary  for filter, feElements, etc. to return a list !!!
+
     body2<-c(body2, 
              quote(rtv<-list()), #rtv begins life here and is populated by the following
-             insertConditionalCode(ele.tag,attrsEle2Quote$filter, echoQuote, filterQuote),
-             insertConditionalCode(ele.tag,attrsEle2Quote$fill, echoQuote, fillQuote),
-             insertConditionalCode(ele.tag,attrsEle2Quote$clip.path, echoQuote, clipPathQuote),
-             insertConditionalCode(ele.tag,attrsEle2Quote$mask, echoQuote, maskQuote),
-             insertConditionalCode(ele.tag,attrsEle2Quote$marker, echoQuote, markerEndQuote),
-             insertConditionalCode(ele.tag,attrsEle2Quote$marker, echoQuote, markerMidQuote),
-             insertConditionalCode(ele.tag,attrsEle2Quote$marker, echoQuote, markerStartQuote),
-             insertConditionalCode(ele.tag, c('text' , 'textPath' , 'tspan'), echoQuote, textQuote),
-             insertConditionalCode(ele.tag, c("linearGradient",  "radialGradient"), echoQuote, gradientColorQuote)            
+             insertCode4GivenTags(ele.tag,attrsEle2Quote$filter, echoQuote, filterQuote),
+             insertCode4GivenTags(ele.tag,attrsEle2Quote$fill, echoQuote, fillQuote),
+             insertCode4GivenTags(ele.tag,attrsEle2Quote$clip.path, echoQuote, clipPathQuote),
+             insertCode4GivenTags(ele.tag,attrsEle2Quote$mask, echoQuote, maskQuote),
+             insertCode4GivenTags(ele.tag,attrsEle2Quote$marker, echoQuote, markerEndQuote),
+             insertCode4GivenTags(ele.tag,attrsEle2Quote$marker, echoQuote, markerMidQuote),
+             insertCode4GivenTags(ele.tag,attrsEle2Quote$marker, echoQuote, markerStartQuote),
+             insertCode4GivenTags(ele.tag, c('text' , 'textPath' , 'tspan'), echoQuote, textQuote),
+             insertCode4GivenTags(ele.tag, c("linearGradient",  "radialGradient"), echoQuote, gradientColorQuote),
+             insertCode4GivenTags(ele.tag, filterPrimitive.Tags, echoQuote, feQuote)          
     )
+    
+    body2[sapply(body2, is.null)] <- NULL
 
-    #add code to add to node children and node from tag
+  #body 3
+  # take care of children
+  # if children are filterPrim, they will be prepended return value
+  # return value has node as last entry with children prepend if necessary (i.e filterPrimitives)
     body3<-c(
       quote(kids<-allGoodChildern(args)),
       substitute(
@@ -168,29 +183,17 @@ build.svgFnQ<-function(){
       substitute(
         node<-XMLAbstractNode$new(tag=ele.tag, attrs=attrs, .children=kids), 
         list(ele.tag=ele.tag)
-      )
+      ),
+      quote({ 
+        if(length(rtv)>0){
+          node<-c(rtv,node)
+        }
+        node
+      })
     )
 
-    body3<-c(body3,
-         # **  add this for filter, feElements, etc.
-         quote({ 
-           if(length(rtv)>0){
-             node<-c(rtv,node)
-           }
-           node
-         })
-)
-
-# ** prior to adding .children and attrs, we process for our custom
-    # attribute=element assignments
+    body3[sapply(body3, is.null)] <- NULL
     
-    if(ele.tag %in% filterElementTags){
-      body3<-c(
-        feQuote, # moves  feElements form args to rtv prior to node creation,
-        body3#, 
-        #quote(node<-c(rtv,node)) # returns an rtv list + node
-      )   
-    }
 
     fn<-function(...){}
     body(fn)<-as.call(c(as.name("{"), body0, body1, body2, body3))
