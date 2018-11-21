@@ -30,7 +30,12 @@ source("./code/specialTagHandlers.R")
 build.svgFnQ<-function(){
  
   requireTable(AET.DT, COP1.DT, PA.DT)
-#   
+# 
+  
+  AET.DT[AET.DT$attr=='tableValues',treatValueAs:='wsp-list']  #kludge for now, should add into dt soon!!!
+  AET.DT<-rbind(AET.DT, #kludge for now, should add into dt soon!!!
+        data.table(attr='values', element='feColorMatrix', anim=TRUE, treatValueAs="wsp-list"))
+  
   # all elements
   ele.tags<-unique(AET.DT$element)
   #all attributes
@@ -77,6 +82,7 @@ build.svgFnQ<-function(){
   createEleFnQ<-function(ele.tag, AET.DT){
     AET.DT[element==ele.tag & treatValueAs!="ignore",]->ele.dt
     ele.dt[, paste(attr, collapse=" "), by=treatValueAs]->treat_attrs.dt
+    
     
     #helper fn
     # animateComboParam<-function(ele.tag){
@@ -135,6 +141,7 @@ build.svgFnQ<-function(){
       },
       insertCode4GivenTags(ele.tag, ele.tags.attributeName, echoQuote, quote(attrs<-mapAttributeName(attrs) ) ),
       insertCode4GivenTags(ele.tag, "animate", echoQuote, quote(attrs<-preProcAnimate(attrs)) )
+      
     )
     body1[sapply(body1, is.null)] <- NULL  
     
@@ -151,6 +158,7 @@ build.svgFnQ<-function(){
       )
     } 
     body2<-lapply(tmp, function(tvaAttr){preprocAttrValueFn(tvaAttr)}) 
+    
     unlist(body2, use.names=F)->body2
     #as.list(body2)->body2
 
@@ -241,6 +249,18 @@ build.svgFnQ<-function(){
           base::stop("bad scale arguments")
         }
         list(scale=c(dx,dy))
+      },
+      skewX=function(angle){
+        if(length(angle)!=1){
+          base::stop("bad skewX arguments")
+        }
+        list(skewX=angle)
+      },
+      skewY=function(angle){
+        if(length(angle)!=1){
+          base::stop("bad skewY arguments")
+        }
+        list(skewY=angle)
       },
       u.em=function(x)paste0(x,'em'),
       u.ex=function(x)paste0(x,'ex'),
