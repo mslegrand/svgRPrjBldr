@@ -16,12 +16,14 @@ buildAll<-function(targetDir="svgR"){
   eleDefBldr(targetDir)
   
 #documentation generation  
-  source("./doc/docBldr.R") # entry point for documentmenation
-  do.documentation(es.DT, targetDir) 
+  # commented out for git expediency 
+  # source("./doc/docBldr.R") # entry point for documentmenation
+  # do.documentation(es.DT, targetDir) 
 
 #lateX addon
-  source("./code/TeXUnicodeBldr.R")
-  TeXUnicodeBldr(targetDir)
+  # ISSUES WITH TeXUnicodeBldr.R: DO NOT RUN UNTIL FIXED
+  # source("./code/TeXUnicodeBldr.R") 
+  # TeXUnicodeBldr(targetDir)
 
 }
 buildAll()
