@@ -122,7 +122,7 @@ build.svgFnQ<-function(){
     body0<-c(
       quote( args <- list(...) ),
       quote( args <- promoteUnamedLists(args) ),
-      insertCode4GivenTags(ele.tag,c('text' , 'textPath' , 'tspan'), insertTextNodeQuote),
+      insertCode4GivenTags(ele.tag,c('text' , 'textPath' , 'tspan', 'foreignObject'), insertTextNodeQuote),
       insertCode4GivenTags(ele.tag,c('set', 'animate'),makeAni, aaCombos),
       insertCode4GivenTags(ele.tag,'filter', echoQuote, filterTagQuote),
       quote( attrs <- named(args) ),
@@ -172,7 +172,7 @@ build.svgFnQ<-function(){
              insertCode4GivenTags(ele.tag,attrsEle2Quote$marker, echoQuote, markerEndQuote),
              insertCode4GivenTags(ele.tag,attrsEle2Quote$marker, echoQuote, markerMidQuote),
              insertCode4GivenTags(ele.tag,attrsEle2Quote$marker, echoQuote, markerStartQuote),
-             insertCode4GivenTags(ele.tag, c('text' , 'textPath' , 'tspan'), echoQuote, textQuote),
+             insertCode4GivenTags(ele.tag, c('text' , 'textPath' , 'tspan', 'foreignObject'), echoQuote, textQuote),
              insertCode4GivenTags(ele.tag, c("linearGradient",  "radialGradient"), echoQuote, gradientColorQuote),
              insertCode4GivenTags(ele.tag, filterPrimitive.Tags, echoQuote, feQuote)          
     )
